@@ -1,0 +1,88 @@
+{
+  "id": "caip",
+  "title": "Professionnel certifié en intelligence artificielle (CAIP) — PECB",
+  "description": "Quiz d'entraînement original sur les fondamentaux, techniques et pratiques responsables de l'intelligence artificielle.",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "caip-001",
+      "category": "Fondamentaux de l'IA",
+      "question": "Quel énoncé décrit le mieux l'apprentissage supervisé ?",
+      "options": ["Le modèle apprend à partir d'exemples comportant des entrées et des réponses attendues", "Le modèle apprend uniquement sans aucune donnée", "Le modèle regroupe toujours les données sans étiquette", "Le modèle suit uniquement des règles écrites manuellement"],
+      "correctIndex": 0,
+      "correction": "En apprentissage supervisé, le modèle apprend une relation à partir de données d'entraînement comprenant des entrées et des cibles ou étiquettes attendues."
+    },
+    {
+      "id": "caip-002",
+      "category": "Machine Learning",
+      "question": "Quel problème est typiquement un problème de classification ?",
+      "options": ["Prédire le prix exact d'une maison", "Déterminer si un courriel est indésirable ou non", "Estimer une température continue", "Calculer la moyenne d'une série"],
+      "correctIndex": 1,
+      "correction": "La classification attribue une observation à une catégorie discrète. Déterminer spam ou non-spam est donc un exemple classique de classification binaire."
+    },
+    {
+      "id": "caip-003",
+      "category": "Évaluation des modèles",
+      "question": "Pourquoi sépare-t-on généralement les données d'entraînement et les données de test ?",
+      "options": ["Pour mesurer la capacité du modèle à généraliser à des données non utilisées pour l'entraînement", "Pour doubler automatiquement le nombre de variables", "Pour garantir un score de 100 %", "Pour supprimer le besoin de prétraitement"],
+      "correctIndex": 0,
+      "correction": "Un jeu de test indépendant sert à estimer les performances du modèle sur des données qu'il n'a pas vues pendant l'apprentissage."
+    },
+    {
+      "id": "caip-004",
+      "category": "Deep Learning",
+      "question": "Quel élément est caractéristique d'un réseau de neurones profond ?",
+      "options": ["L'utilisation de plusieurs couches de traitement entre l'entrée et la sortie", "L'absence totale de paramètres à apprendre", "L'utilisation obligatoire d'une seule variable", "L'impossibilité d'utiliser des images"],
+      "correctIndex": 0,
+      "correction": "Le terme deep learning fait notamment référence à des architectures de réseaux de neurones comportant plusieurs couches capables d'apprendre des représentations successives."
+    },
+    {
+      "id": "caip-005",
+      "category": "NLP",
+      "question": "Quel cas d'usage relève principalement du traitement automatique du langage naturel (NLP) ?",
+      "options": ["Analyser le sentiment exprimé dans des commentaires clients", "Mesurer la tension électrique d'un circuit", "Compresser une archive ZIP", "Calculer la résolution d'un écran"],
+      "correctIndex": 0,
+      "correction": "Le NLP concerne le traitement informatique du langage humain. L'analyse de sentiment sur du texte en est une application courante."
+    },
+    {
+      "id": "caip-006",
+      "category": "Vision par ordinateur",
+      "question": "Quel objectif correspond à une tâche de détection d'objets en vision par ordinateur ?",
+      "options": ["Identifier les objets présents et localiser leur position dans une image", "Traduire automatiquement un paragraphe", "Prédire uniquement une valeur numérique à partir d'un tableau", "Trier des fichiers par leur extension"],
+      "correctIndex": 0,
+      "correction": "La détection d'objets cherche généralement à reconnaître plusieurs objets et à estimer leur localisation, par exemple au moyen de boîtes englobantes."
+    },
+    {
+      "id": "caip-007",
+      "category": "IA responsable",
+      "question": "Quelle pratique aide directement à détecter un biais de performance entre différents groupes d'utilisateurs ?",
+      "options": ["Comparer les métriques du modèle par sous-groupes pertinents", "Masquer les résultats de validation", "Utiliser systématiquement davantage de couches", "Supprimer toute documentation du modèle"],
+      "correctIndex": 0,
+      "correction": "L'analyse des métriques par sous-groupes permet d'identifier des écarts de performance susceptibles de révéler des problèmes d'équité ou de représentativité."
+    },
+    {
+      "id": "caip-008",
+      "category": "Gouvernance",
+      "question": "Pourquoi documenter les données, hypothèses et limites d'un système d'IA ?",
+      "options": ["Pour améliorer la traçabilité et permettre une évaluation plus responsable du système", "Pour empêcher toute maintenance future", "Pour garantir que le système ne fera jamais d'erreur", "Pour remplacer les contrôles de sécurité"],
+      "correctIndex": 0,
+      "correction": "Une documentation claire facilite la traçabilité, la compréhension des limites, les audits, la gestion des risques et les décisions de déploiement."
+    },
+    {
+      "id": "caip-009",
+      "category": "Cycle de vie de l'IA",
+      "question": "Après le déploiement d'un modèle, pourquoi faut-il continuer à surveiller ses performances ?",
+      "options": ["Parce que les données réelles et leurs distributions peuvent évoluer dans le temps", "Parce que le modèle cesse automatiquement de fonctionner après un jour", "Parce que le test initial n'a aucune utilité", "Parce que tous les modèles doivent être réentraînés chaque heure"],
+      "correctIndex": 0,
+      "correction": "Le contexte et la distribution des données peuvent évoluer après le déploiement. Une surveillance permet notamment de détecter une dérive et une dégradation des performances."
+    },
+    {
+      "id": "caip-010",
+      "category": "Systèmes experts",
+      "question": "Dans un système expert classique fondé sur des règles, quel composant applique les règles aux faits disponibles ?",
+      "options": ["Le moteur d'inférence", "Le navigateur web", "Le compilateur CSS", "Le système de fichiers"],
+      "correctIndex": 0,
+      "correction": "Le moteur d'inférence exploite la base de connaissances et les faits afin d'appliquer les règles et de produire des conclusions."
+    }
+  ]
+}

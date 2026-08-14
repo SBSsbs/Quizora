@@ -1,0 +1,88 @@
+{
+  "id": "spark",
+  "title": "Apache Spark : Programmer avec Apache Spark — Databricks",
+  "description": "Quiz d'entraînement original sur Spark, les DataFrames, les transformations, les actions et le traitement distribué.",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "spark-001",
+      "category": "Architecture Spark",
+      "question": "Quel est le rôle principal du driver dans une application Apache Spark ?",
+      "options": ["Coordonner l'exécution de l'application et planifier le travail distribué", "Stocker obligatoirement toutes les données du cluster", "Remplacer tous les executors", "Convertir automatiquement Python en SQL"],
+      "correctIndex": 0,
+      "correction": "Le driver exécute la logique principale de l'application Spark, construit le plan de travail et coordonne les tâches exécutées sur le cluster."
+    },
+    {
+      "id": "spark-002",
+      "category": "Exécution distribuée",
+      "question": "Dans Spark, où les tâches de calcul sont-elles principalement exécutées ?",
+      "options": ["Sur les executors", "Uniquement dans le navigateur", "Dans le fichier CSV source", "Uniquement sur le driver sans processus de travail"],
+      "correctIndex": 0,
+      "correction": "Les executors sont les processus de travail qui exécutent les tâches et peuvent conserver des données en mémoire ou sur disque pour l'application."
+    },
+    {
+      "id": "spark-003",
+      "category": "DataFrames",
+      "question": "Quel objet Spark représente des données distribuées organisées en colonnes nommées avec un schéma ?",
+      "options": ["DataFrame", "Widget HTML", "Thread système", "Fichier README"],
+      "correctIndex": 0,
+      "correction": "Un DataFrame Spark représente une collection distribuée de données structurées en colonnes nommées et associées à un schéma."
+    },
+    {
+      "id": "spark-004",
+      "category": "Transformations",
+      "question": "Laquelle des opérations suivantes est typiquement une transformation Spark ?",
+      "options": ["filter", "count", "collect", "show"],
+      "correctIndex": 0,
+      "correction": "filter produit un nouveau jeu de données logique à partir d'un DataFrame. count, collect et show déclenchent typiquement une évaluation pour produire un résultat ou un affichage."
+    },
+    {
+      "id": "spark-005",
+      "category": "Évaluation paresseuse",
+      "question": "Que signifie l'évaluation paresseuse (lazy evaluation) dans Spark ?",
+      "options": ["Les transformations sont enregistrées et leur calcul est différé jusqu'à ce qu'une action exige un résultat", "Spark attend toujours une heure avant d'exécuter du code", "Les executors ne peuvent jamais utiliser la mémoire", "Toutes les données sont immédiatement collectées sur le driver"],
+      "correctIndex": 0,
+      "correction": "Spark construit un plan à partir des transformations et évite généralement d'exécuter le calcul tant qu'une action ne demande pas effectivement un résultat."
+    },
+    {
+      "id": "spark-006",
+      "category": "Actions",
+      "question": "Quelle opération Spark déclenche typiquement l'exécution afin d'obtenir le nombre de lignes d'un DataFrame ?",
+      "options": ["count()", "filter()", "select()", "withColumn()"],
+      "correctIndex": 0,
+      "correction": "count() est une action : elle demande un résultat numérique et déclenche donc l'exécution du plan nécessaire pour compter les lignes."
+    },
+    {
+      "id": "spark-007",
+      "category": "Partitions",
+      "question": "Pourquoi Spark divise-t-il généralement les données en partitions ?",
+      "options": ["Pour permettre le traitement parallèle de portions des données", "Pour empêcher tout calcul distribué", "Pour convertir les données en images", "Pour rendre obligatoire un seul executor"],
+      "correctIndex": 0,
+      "correction": "Les partitions constituent des unités de données pouvant être traitées en parallèle par différentes tâches sur les ressources du cluster."
+    },
+    {
+      "id": "spark-008",
+      "category": "Shuffle",
+      "question": "Quel type d'opération peut provoquer un shuffle de données entre partitions ?",
+      "options": ["Un groupBy suivi d'une agrégation", "La lecture d'une constante Python locale", "L'affichage d'une chaîne statique", "La création d'un commentaire dans un notebook"],
+      "correctIndex": 0,
+      "correction": "Les opérations qui doivent regrouper des lignes ayant une même clé, comme certaines agrégations après groupBy, peuvent nécessiter de redistribuer les données entre partitions."
+    },
+    {
+      "id": "spark-009",
+      "category": "Optimisation",
+      "question": "Quel avantage le DataFrame API apporte-t-il notamment par rapport à une logique distribuée totalement opaque au moteur ?",
+      "options": ["Spark peut analyser et optimiser le plan logique de nombreuses opérations", "Il garantit qu'aucune donnée ne sera jamais mélangée", "Il impose l'utilisation d'une seule machine", "Il supprime tout besoin de schéma"],
+      "correctIndex": 0,
+      "correction": "Les opérations déclaratives sur DataFrames permettent au moteur Spark d'analyser le plan et d'appliquer différentes optimisations avant l'exécution."
+    },
+    {
+      "id": "spark-010",
+      "category": "PySpark",
+      "question": "Dans un environnement Databricks, à quoi sert principalement PySpark ?",
+      "options": ["À utiliser Apache Spark depuis le langage Python", "À remplacer Apache Spark par un tableur", "À compiler exclusivement du code JavaScript", "À désactiver le calcul distribué"],
+      "correctIndex": 0,
+      "correction": "PySpark fournit l'interface Python d'Apache Spark et permet de construire des traitements distribués en utilisant les API Spark depuis Python."
+    }
+  ]
+}

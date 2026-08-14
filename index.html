@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Application de quiz pour sessions de formation">
+  <title>Quiz Formation</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card" id="home-screen">
+      <div class="brand">FORMATION • QUIZ</div>
+      <h1 id="formation-title">Chargement…</h1>
+      <p id="formation-description" class="muted"></p>
+      <div id="formation-picker" class="picker hidden"></div>
+
+      <div id="participant-form" class="participant-form hidden">
+        <label for="participant-name">Votre nom ou identifiant</label>
+        <input id="participant-name" type="text" maxlength="80" placeholder="Ex. Marie Dupont">
+        <button id="start-btn" class="primary">Commencer le quiz</button>
+      </div>
+      <p id="load-error" class="error hidden"></p>
+    </section>
+
+    <section class="card hidden" id="quiz-screen">
+      <div class="quiz-topbar">
+        <span id="progress-text"></span>
+        <span id="score-live"></span>
+      </div>
+      <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+      <p id="question-category" class="eyebrow"></p>
+      <h2 id="question-text"></h2>
+      <div id="answers" class="answers"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <button id="next-btn" class="primary hidden">Question suivante</button>
+    </section>
+
+    <section class="card hidden" id="result-screen">
+      <div class="brand">RÉSULTAT</div>
+      <h1>Quiz terminé</h1>
+      <p id="participant-result" class="muted"></p>
+      <div id="final-score" class="final-score"></div>
+      <p id="final-message"></p>
+      <div id="review" class="review"></div>
+      <div class="actions">
+        <button id="restart-btn" class="primary">Recommencer</button>
+        <button id="home-btn" class="secondary">Choisir une autre formation</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
