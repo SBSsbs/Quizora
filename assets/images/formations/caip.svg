@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Intelligence artificielle</title>
+  <desc id="desc">Illustration générique d'une puce d'intelligence artificielle.</desc>
+  <rect width="512" height="512" rx="96" fill="#eef4ff"/>
+  <g fill="none" stroke="#2563eb" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="136" y="136" width="240" height="240" rx="42"/>
+    <path d="M184 256h144M256 184v144" opacity=".22"/>
+    <path d="M176 82v54M256 82v54M336 82v54M176 376v54M256 376v54M336 376v54M82 176h54M82 256h54M82 336h54M376 176h54M376 256h54M376 336h54"/>
+  </g>
+  <text x="256" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="96" font-weight="800" fill="#2563eb">AI</text>
+</svg>

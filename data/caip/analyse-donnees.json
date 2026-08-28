@@ -1,0 +1,268 @@
+{
+  "id": "caip-analyse-donnees",
+  "title": "CAIP — Analyse de données",
+  "description": "Quiz de 20 questions sur l'analyse de données, les statistiques, la modélisation, l'éthique et la visualisation (slides 52 à 89).",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "caip-data-001",
+      "category": "Analyse de données",
+      "question": "Quel type d'analyse cherche à comprendre les causes des tendances et anomalies ?",
+      "options": [
+        "Descriptive",
+        "Diagnostique",
+        "Prédictive",
+        "Prescriptive"
+      ],
+      "correctIndex": 1,
+      "correction": "L'analyse diagnostique cherche à expliquer pourquoi un événement, une tendance ou une anomalie s'est produit en examinant les causes et relations possibles."
+    },
+    {
+      "id": "caip-data-002",
+      "category": "Analyse de données",
+      "question": "Quel type d'analyse recommande des actions pour influencer les résultats souhaités ?",
+      "options": [
+        "Exploratoire",
+        "Descriptive",
+        "Prescriptive",
+        "Prédictive"
+      ],
+      "correctIndex": 2,
+      "correction": "L'analyse prescriptive va au-delà de la prévision : elle recommande des actions ou décisions visant à favoriser un résultat souhaité."
+    },
+    {
+      "id": "caip-data-003",
+      "category": "Analyse de données",
+      "question": "Quelle est la première étape du flux de travail de l'analyse de données ?",
+      "options": [
+        "Modélisation",
+        "Collecte de données",
+        "Communication",
+        "Analyse exploratoire"
+      ],
+      "correctIndex": 1,
+      "correction": "La collecte de données constitue la première étape : il faut disposer des données pertinentes avant de pouvoir les nettoyer, les explorer, les modéliser et communiquer les résultats."
+    },
+    {
+      "id": "caip-data-004",
+      "category": "Qualité des données",
+      "question": "L'adage « garbage in, garbage out » signifie que :",
+      "options": [
+        "Les données doivent être supprimées après usage",
+        "De mauvaises entrées produisent de mauvaises sorties",
+        "Les doublons sont utiles",
+        "L'IA corrige les erreurs"
+      ],
+      "correctIndex": 1,
+      "correction": "La qualité des résultats dépend fortement de la qualité des données d'entrée. Des données erronées, incomplètes ou biaisées peuvent conduire à des résultats peu fiables."
+    },
+    {
+      "id": "caip-data-005",
+      "category": "Collecte de données",
+      "question": "Des données recueillies par enquêtes ou entretiens dans un but spécifique sont des données :",
+      "options": [
+        "Secondaires",
+        "Primaires",
+        "Synthétiques",
+        "Non structurées"
+      ],
+      "correctIndex": 1,
+      "correction": "Les données primaires sont collectées directement pour répondre à un besoin ou objectif spécifique, par exemple au moyen d'enquêtes, d'entretiens ou d'observations."
+    },
+    {
+      "id": "caip-data-006",
+      "category": "Collecte de données",
+      "question": "Lequel n'est pas un défi de la collecte de données cité dans le cours ?",
+      "options": [
+        "Biais dans les données",
+        "Erreurs d'échantillonnage",
+        "Confidentialité",
+        "Choix de la police de caractères"
+      ],
+      "correctIndex": 3,
+      "correction": "Le choix de la police de caractères ne concerne pas la collecte des données. Les biais, les erreurs d'échantillonnage et la confidentialité sont en revanche des enjeux classiques de collecte."
+    },
+    {
+      "id": "caip-data-007",
+      "category": "Nettoyage des données",
+      "question": "Quel outil open source est spécifiquement conçu pour travailler avec des données désordonnées ?",
+      "options": [
+        "OpenRefine",
+        "Tableau",
+        "TensorFlow",
+        "MongoDB"
+      ],
+      "correctIndex": 0,
+      "correction": "OpenRefine est un outil open source conçu pour explorer, nettoyer, transformer et réconcilier des jeux de données hétérogènes ou désordonnés."
+    },
+    {
+      "id": "caip-data-008",
+      "category": "Nettoyage des données",
+      "question": "Quelle bibliothèque Python est citée pour la manipulation et le nettoyage des données ?",
+      "options": [
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Keras"
+      ],
+      "correctIndex": 1,
+      "correction": "Pandas fournit des structures comme les DataFrame et de nombreuses fonctions de manipulation, transformation et nettoyage des données."
+    },
+    {
+      "id": "caip-data-009",
+      "category": "Qualité des données",
+      "question": "Lequel de ces problèmes n'est pas listé comme problème de données courant ?",
+      "options": [
+        "Valeurs manquantes",
+        "Doublons",
+        "Formatage incohérent",
+        "Surapprentissage"
+      ],
+      "correctIndex": 3,
+      "correction": "Le surapprentissage est un problème de modélisation : il concerne un modèle qui s'adapte excessivement aux données d'entraînement. Les valeurs manquantes, doublons et formats incohérents sont des problèmes de données."
+    },
+    {
+      "id": "caip-data-010",
+      "category": "Statistiques",
+      "question": "La variance et l'écart type sont des mesures de :",
+      "options": [
+        "Tendance centrale",
+        "Variabilité",
+        "Corrélation",
+        "Signification"
+      ],
+      "correctIndex": 1,
+      "correction": "La variance et l'écart type mesurent la dispersion ou variabilité des observations autour de leur moyenne."
+    },
+    {
+      "id": "caip-data-011",
+      "category": "Statistiques",
+      "question": "Une faible valeur de p indique que :",
+      "options": [
+        "L'effet observé est probablement dû au hasard",
+        "L'effet observé est peu probablement dû au hasard",
+        "L'échantillon est trop petit",
+        "Le modèle est surappris"
+      ],
+      "correctIndex": 1,
+      "correction": "Dans un test statistique, une faible valeur de p signifie que les données observées seraient peu compatibles avec l'hypothèse nulle. Dans le cadre du cours, cela indique que l'effet observé est peu probablement attribuable au hasard seul."
+    },
+    {
+      "id": "caip-data-012",
+      "category": "Modélisation",
+      "question": "Quel algorithme sert à regrouper des données sans étiquettes préexistantes ?",
+      "options": [
+        "Régression logistique",
+        "Arbre de décision",
+        "k-moyennes",
+        "Régression linéaire"
+      ],
+      "correctIndex": 2,
+      "correction": "L'algorithme k-moyennes est une méthode de clustering non supervisé : il regroupe les observations en clusters sans utiliser d'étiquettes de classe préexistantes."
+    },
+    {
+      "id": "caip-data-013",
+      "category": "Modélisation",
+      "question": "Le surapprentissage (overfitting) correspond à un modèle qui :",
+      "options": [
+        "Est trop simple pour capturer les schémas",
+        "Apprend trop bien les données d'entraînement, y compris le bruit",
+        "N'a pas assez de données",
+        "Utilise trop d'hyperparamètres"
+      ],
+      "correctIndex": 1,
+      "correction": "Un modèle surappris mémorise excessivement les particularités des données d'entraînement, y compris le bruit, et généralise moins bien à de nouvelles données."
+    },
+    {
+      "id": "caip-data-014",
+      "category": "Évaluation des modèles",
+      "question": "Quelle métrique est la moyenne harmonique de la précision et du rappel ?",
+      "options": [
+        "MAE",
+        "RMSE",
+        "Justesse",
+        "Score F1"
+      ],
+      "correctIndex": 3,
+      "correction": "Le score F1 est la moyenne harmonique de la précision et du rappel. Il est utile lorsqu'on souhaite équilibrer ces deux métriques de classification."
+    },
+    {
+      "id": "caip-data-015",
+      "category": "Évaluation des modèles",
+      "question": "Quelle métrique de régression pénalise davantage les grandes erreurs ?",
+      "options": [
+        "MAE",
+        "RMSE",
+        "Rappel",
+        "Précision"
+      ],
+      "correctIndex": 1,
+      "correction": "Le RMSE repose sur les erreurs au carré avant de prendre la racine carrée ; les erreurs importantes ont donc un poids plus élevé que dans le MAE."
+    },
+    {
+      "id": "caip-data-016",
+      "category": "Modélisation",
+      "question": "Les forêts aléatoires et le boosting sont des exemples de :",
+      "options": [
+        "Validation croisée",
+        "Méthodes d'ensemble",
+        "Ingénierie des caractéristiques",
+        "Rééchantillonnage"
+      ],
+      "correctIndex": 1,
+      "correction": "Les forêts aléatoires et les méthodes de boosting combinent plusieurs modèles de base afin d'améliorer la robustesse ou les performances prédictives : ce sont des méthodes d'ensemble."
+    },
+    {
+      "id": "caip-data-017",
+      "category": "Éthique et réglementation",
+      "question": "Quelles réglementations sont citées pour l'utilisation des données personnelles ?",
+      "options": [
+        "ISO 9001 et ITIL",
+        "RGPD et CCPA",
+        "SOX et PCI-DSS",
+        "HIPAA et COBIT"
+      ],
+      "correctIndex": 1,
+      "correction": "Le RGPD en Europe et le CCPA en Californie sont des cadres réglementaires majeurs relatifs à la protection et à l'utilisation des données personnelles."
+    },
+    {
+      "id": "caip-data-018",
+      "category": "Types de données",
+      "question": "Lequel est un exemple de données non structurées selon le cours ?",
+      "options": [
+        "Base SQL",
+        "Fichier Excel avec lignes et colonnes",
+        "MongoDB",
+        "Table relationnelle"
+      ],
+      "correctIndex": 2,
+      "correction": "Selon le contenu fourni pour ce quiz, MongoDB est l'option attendue. Les bases SQL, tableaux Excel structurés et tables relationnelles sont organisés selon des schémas tabulaires explicites."
+    },
+    {
+      "id": "caip-data-019",
+      "category": "Visualisation",
+      "question": "Pour représenter une tendance dans le temps, quel graphique choisir ?",
+      "options": [
+        "Diagramme à barres",
+        "Graphique linéaire",
+        "Nuage de points",
+        "Camembert"
+      ],
+      "correctIndex": 1,
+      "correction": "Un graphique linéaire est particulièrement adapté à la représentation de l'évolution d'une variable au fil du temps et permet de visualiser facilement les tendances."
+    },
+    {
+      "id": "caip-data-020",
+      "category": "Visualisation",
+      "question": "Quel est le principal inconvénient de Matplotlib par rapport à Tableau ?",
+      "options": [
+        "Coût de licence élevé",
+        "Courbe d'apprentissage plus abrupte",
+        "Peu de personnalisation",
+        "Limité à l'écosystème Microsoft"
+      ],
+      "correctIndex": 1,
+      "correction": "Matplotlib offre une grande flexibilité mais nécessite généralement davantage de programmation et d'apprentissage qu'un outil visuel comme Tableau, ce qui peut rendre sa prise en main plus exigeante."
+    }
+  ]
+}

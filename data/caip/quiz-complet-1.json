@@ -1,0 +1,528 @@
+{
+  "id": "caip-quiz-complet-1",
+  "title": "CAIP — Quiz complet 1",
+  "description": "40 questions de révision couvrant les principales thématiques des supports de cours CAIP Jour 1 à Jour 4.",
+  "version": "2.0",
+  "questions": [
+    {
+      "id": "caip-quiz-complet-1-001",
+      "category": "Fondamentaux de l'IA",
+      "question": "Quel jalon de 1950 est associé à Alan Turing dans l'histoire de l'IA ?",
+      "options": [
+        "La création d'ELIZA",
+        "La publication de « Computing Machinery and Intelligence »",
+        "La victoire de Deep Blue",
+        "Le lancement de GPT-3"
+      ],
+      "correctIndex": 1,
+      "correction": "En 1950, Alan Turing publie « Computing Machinery and Intelligence », texte fondateur associé au test de Turing."
+    },
+    {
+      "id": "caip-quiz-complet-1-002",
+      "category": "Fondamentaux de l'IA",
+      "question": "Lors de quel événement le terme « intelligence artificielle » a-t-il été officiellement consacré ?",
+      "options": [
+        "Le projet d'été de Dartmouth en 1956",
+        "La conférence de Kyoto en 1981",
+        "Le lancement d'AlphaGo en 2016",
+        "La création de DENDRAL en 1965"
+      ],
+      "correctIndex": 0,
+      "correction": "Le terme est officiellement consacré lors du projet de recherche d'été de Dartmouth en 1956, organisé notamment par John McCarthy et Marvin Minsky."
+    },
+    {
+      "id": "caip-quiz-complet-1-003",
+      "category": "Fondamentaux de l'IA",
+      "question": "Quelle relation entre IA, apprentissage automatique et apprentissage profond est correcte ?",
+      "options": [
+        "Le deep learning englobe toute l'IA",
+        "Le machine learning est un sous-ensemble de l'IA et le deep learning un sous-ensemble du machine learning",
+        "L'IA est un sous-ensemble du machine learning",
+        "Les trois notions sont indépendantes"
+      ],
+      "correctIndex": 1,
+      "correction": "Le cours présente l'apprentissage automatique comme un sous-ensemble de l'IA, et l'apprentissage profond comme une branche spécialisée du machine learning."
+    },
+    {
+      "id": "caip-quiz-complet-1-004",
+      "category": "Fondamentaux de l'IA",
+      "question": "Quelle caractéristique distingue principalement l'IA symbolique ?",
+      "options": [
+        "Elle repose sur le raisonnement symbolique et des bases de connaissances",
+        "Elle nécessite toujours des réseaux convolutifs",
+        "Elle n'utilise aucune représentation de connaissances",
+        "Elle fonctionne uniquement avec des données non étiquetées"
+      ],
+      "correctIndex": 0,
+      "correction": "L'IA symbolique s'appuie sur des symboles, des règles et des bases de connaissances afin de produire un raisonnement explicable."
+    },
+    {
+      "id": "caip-quiz-complet-1-005",
+      "category": "Fondamentaux de l'IA",
+      "question": "Quel compromis est souvent associé aux modèles modernes de machine learning et de deep learning ?",
+      "options": [
+        "Plus ils sont complexes, plus ils sont forcément transparents",
+        "Ils peuvent être très performants mais devenir difficiles à interpréter",
+        "Ils n'ont besoin d'aucune donnée",
+        "Ils ne peuvent pas traiter d'images"
+      ],
+      "correctIndex": 1,
+      "correction": "Le support souligne que la complexité améliore souvent les performances mais peut accroître l'opacité et l'effet de « boîte noire »."
+    },
+    {
+      "id": "caip-quiz-complet-1-006",
+      "category": "Science des données",
+      "question": "Quelles disciplines sont combinées au cœur de la science des données selon le cours ?",
+      "options": [
+        "Statistiques, informatique et expertise du domaine",
+        "Comptabilité, droit et design",
+        "Réseaux, sécurité et téléphonie",
+        "Marketing, vente et logistique uniquement"
+      ],
+      "correctIndex": 0,
+      "correction": "La science des données associe statistiques, informatique et connaissance du domaine afin de transformer les données en informations utiles."
+    },
+    {
+      "id": "caip-quiz-complet-1-007",
+      "category": "Science des données",
+      "question": "Quel ensemble est utilisé pendant le développement pour guider les choix de modèle et d'hyperparamètres ?",
+      "options": [
+        "Ensemble de validation",
+        "Ensemble de production",
+        "Ensemble d'archivage",
+        "Ensemble de test uniquement"
+      ],
+      "correctIndex": 0,
+      "correction": "L'ensemble de validation sert à comparer des variantes et à régler les hyperparamètres pendant le développement."
+    },
+    {
+      "id": "caip-quiz-complet-1-008",
+      "category": "Science des données",
+      "question": "Que rappelle le théorème du « No Free Lunch » ?",
+      "options": [
+        "Un même algorithme est toujours optimal",
+        "Aucun algorithme n'est le meilleur pour tous les problèmes",
+        "Les données ne sont jamais nécessaires",
+        "La validation croisée est inutile"
+      ],
+      "correctIndex": 1,
+      "correction": "Le théorème rappelle qu'aucun algorithme universel n'est optimal pour toutes les tâches ; le choix dépend du problème et des données."
+    },
+    {
+      "id": "caip-quiz-complet-1-009",
+      "category": "Science des données",
+      "question": "Quel type de données possède un zéro absolu significatif et autorise des comparaisons de ratios ?",
+      "options": [
+        "Nominales",
+        "Ordinales",
+        "D'intervalle",
+        "De rapport (ratio)"
+      ],
+      "correctIndex": 3,
+      "correction": "Les données de rapport possèdent des intervalles égaux et un zéro absolu, ce qui rend les rapports significatifs."
+    },
+    {
+      "id": "caip-quiz-complet-1-010",
+      "category": "Flux de travail ML",
+      "question": "Quelle est la première étape critique d'un projet d'apprentissage automatique ?",
+      "options": [
+        "Déployer immédiatement le modèle",
+        "Définir clairement le problème et les objectifs",
+        "Choisir un GPU",
+        "Créer un tableau de bord"
+      ],
+      "correctIndex": 1,
+      "correction": "Le flux de travail commence par la définition du problème et des objectifs afin d'aligner la solution sur le besoin réel."
+    },
+    {
+      "id": "caip-quiz-complet-1-011",
+      "category": "Flux de travail ML",
+      "question": "Après la collecte des données, quelle étape permet de visualiser les tendances et de mieux comprendre les données ?",
+      "options": [
+        "Analyse exploratoire des données (EDA)",
+        "Déploiement",
+        "Chiffrement",
+        "Compression"
+      ],
+      "correctIndex": 0,
+      "correction": "L'EDA sert à explorer les distributions, tendances, anomalies et relations avant la modélisation."
+    },
+    {
+      "id": "caip-quiz-complet-1-012",
+      "category": "Flux de travail ML",
+      "question": "Pourquoi le prétraitement des données est-il important ?",
+      "options": [
+        "Il garantit que le modèle reçoit des entrées de meilleure qualité",
+        "Il remplace toujours l'entraînement",
+        "Il supprime le besoin d'évaluation",
+        "Il empêche toute erreur humaine"
+      ],
+      "correctIndex": 0,
+      "correction": "Le nettoyage et le prétraitement améliorent la qualité des entrées et peuvent augmenter fortement la performance du modèle."
+    },
+    {
+      "id": "caip-quiz-complet-1-013",
+      "category": "Flux de travail ML",
+      "question": "Quel énoncé décrit le mieux l'ingénierie des caractéristiques ?",
+      "options": [
+        "Créer ou sélectionner des variables qui représentent utilement le problème",
+        "Changer uniquement la couleur des graphiques",
+        "Supprimer toutes les colonnes",
+        "Installer un serveur web"
+      ],
+      "correctIndex": 0,
+      "correction": "L'ingénierie des caractéristiques vise à construire ou sélectionner des variables informatives qui capturent l'essence du problème."
+    },
+    {
+      "id": "caip-quiz-complet-1-014",
+      "category": "Flux de travail ML",
+      "question": "Quelle étape vient après la mise en production d'un modèle ?",
+      "options": [
+        "Surveillance continue de ses performances",
+        "Suppression de toutes les données",
+        "Arrêt définitif du projet",
+        "Réinitialisation des étiquettes"
+      ],
+      "correctIndex": 0,
+      "correction": "Après le déploiement, le modèle doit être surveillé pour vérifier qu'il reste performant et pertinent dans le temps."
+    },
+    {
+      "id": "caip-quiz-complet-1-015",
+      "category": "Apprentissage supervisé",
+      "question": "Quel problème relève typiquement de la régression ?",
+      "options": [
+        "Prédire un salaire numérique",
+        "Classer un e-mail en spam ou non-spam",
+        "Créer des clusters de clients",
+        "Extraire des noms propres"
+      ],
+      "correctIndex": 0,
+      "correction": "La régression prédit une valeur continue ou numérique, comme un prix ou un salaire."
+    },
+    {
+      "id": "caip-quiz-complet-1-016",
+      "category": "Apprentissage supervisé",
+      "question": "Pourquoi la justesse globale peut-elle être trompeuse sur un jeu de données très déséquilibré ?",
+      "options": [
+        "Parce qu'une classe majoritaire peut dominer le score",
+        "Parce qu'elle est réservée à la régression",
+        "Parce qu'elle ne dépend jamais des prédictions",
+        "Parce qu'elle mesure uniquement la vitesse"
+      ],
+      "correctIndex": 0,
+      "correction": "Sur des classes déséquilibrées, un modèle peut obtenir une forte justesse en favorisant la classe majoritaire ; précision, rappel et F1 apportent une lecture plus utile."
+    },
+    {
+      "id": "caip-quiz-complet-1-017",
+      "category": "Apprentissage supervisé",
+      "question": "Quelle technique peut aider à réduire le surapprentissage d'un arbre de décision ?",
+      "options": [
+        "Élaguer les branches peu pertinentes",
+        "Ajouter systématiquement des centaines de niveaux",
+        "Supprimer toutes les données de validation",
+        "Utiliser uniquement une classe"
+      ],
+      "correctIndex": 0,
+      "correction": "L'élagage simplifie l'arbre en retirant des branches peu utiles, ce qui peut limiter le surapprentissage."
+    },
+    {
+      "id": "caip-quiz-complet-1-018",
+      "category": "Apprentissage supervisé",
+      "question": "Quel est l'intérêt principal de la validation croisée k-fold ?",
+      "options": [
+        "Estimer plus robustement la performance sur des données nouvelles",
+        "Remplacer toute donnée de test",
+        "Créer des images synthétiques",
+        "Éviter le calcul des métriques"
+      ],
+      "correctIndex": 0,
+      "correction": "La validation croisée k-fold réutilise plusieurs partitions d'entraînement/validation pour obtenir une estimation plus robuste de la généralisation."
+    },
+    {
+      "id": "caip-quiz-complet-1-019",
+      "category": "Apprentissage non supervisé",
+      "question": "Que fait principalement K-Means ?",
+      "options": [
+        "Regroupe des observations similaires autour de centroïdes",
+        "Prédit une valeur continue",
+        "Traduit du texte",
+        "Chiffre des données"
+      ],
+      "correctIndex": 0,
+      "correction": "K-Means affecte les points au centroïde le plus proche puis recalcule les centroïdes jusqu'à stabilisation des groupes."
+    },
+    {
+      "id": "caip-quiz-complet-1-020",
+      "category": "Apprentissage non supervisé",
+      "question": "Quel type d'apprentissage recherche des structures dans des données sans sorties étiquetées ?",
+      "options": [
+        "Supervisé",
+        "Non supervisé",
+        "Par règles uniquement",
+        "Régression logistique"
+      ],
+      "correctIndex": 1,
+      "correction": "L'apprentissage non supervisé découvre des structures cachées sans disposer de labels de sortie."
+    },
+    {
+      "id": "caip-quiz-complet-1-021",
+      "category": "Apprentissage avancé",
+      "question": "En apprentissage par renforcement, qu'est-ce qui guide l'agent ?",
+      "options": [
+        "Une fonction de récompense et des interactions avec l'environnement",
+        "Uniquement une table de vérité fixe",
+        "Un étiquetage manuel de chaque action",
+        "Un ordre alphabétique"
+      ],
+      "correctIndex": 0,
+      "correction": "L'agent apprend par essais et erreurs en cherchant à maximiser une récompense cumulative dans son environnement."
+    },
+    {
+      "id": "caip-quiz-complet-1-022",
+      "category": "Apprentissage avancé",
+      "question": "Quel est l'objectif de l'apprentissage auto-supervisé ?",
+      "options": [
+        "Exploiter la structure intrinsèque de données brutes pour créer des signaux d'apprentissage",
+        "Utiliser exclusivement des labels humains",
+        "Éviter tout entraînement",
+        "Remplacer les réseaux neuronaux par des règles"
+      ],
+      "correctIndex": 0,
+      "correction": "L'auto-supervision permet de tirer des signaux d'apprentissage des données elles-mêmes et de mieux exploiter de grands volumes non étiquetés."
+    },
+    {
+      "id": "caip-quiz-complet-1-023",
+      "category": "Apprentissage avancé",
+      "question": "Quel usage correspond à la détection d'anomalies ?",
+      "options": [
+        "Identifier des transactions inhabituelles pouvant signaler une fraude",
+        "Prédire uniquement des valeurs moyennes",
+        "Créer des synonymes",
+        "Ajouter des colonnes manuellement"
+      ],
+      "correctIndex": 0,
+      "correction": "La détection d'anomalies cherche des comportements rares ou atypiques, par exemple pour repérer des fraudes."
+    },
+    {
+      "id": "caip-quiz-complet-1-024",
+      "category": "NLP",
+      "question": "Quel est le rôle de la tokenisation en NLP ?",
+      "options": [
+        "Découper le texte en unités plus petites exploitables",
+        "Convertir une image en vidéo",
+        "Chiffrer une base SQL",
+        "Créer des clusters de pixels"
+      ],
+      "correctIndex": 0,
+      "correction": "La tokenisation segmente le texte en unités comme des mots, sous-mots ou caractères avant l'analyse."
+    },
+    {
+      "id": "caip-quiz-complet-1-025",
+      "category": "NLP",
+      "question": "Quelle différence générale existe entre racinisation et lemmatisation ?",
+      "options": [
+        "La lemmatisation vise une forme linguistique valide et la racinisation applique souvent des règles plus simples",
+        "Elles sont strictement identiques",
+        "La racinisation exige toujours un grand modèle de langage",
+        "La lemmatisation ne traite jamais les mots"
+      ],
+      "correctIndex": 0,
+      "correction": "La racinisation est souvent plus rapide et mécanique, alors que la lemmatisation cherche une forme canonique linguistiquement correcte."
+    },
+    {
+      "id": "caip-quiz-complet-1-026",
+      "category": "NLP",
+      "question": "Pourquoi faut-il être prudent lors de la suppression des mots vides ?",
+      "options": [
+        "Certains mots comme une négation peuvent modifier fortement le sens",
+        "Les mots vides sont toujours les termes les plus importants",
+        "Ils contiennent uniquement des nombres",
+        "Ils servent à mesurer la taille d'une image"
+      ],
+      "correctIndex": 0,
+      "correction": "Le filtrage aveugle peut retirer des mots porteurs de sens, par exemple une négation utile à l'analyse des sentiments."
+    },
+    {
+      "id": "caip-quiz-complet-1-027",
+      "category": "NLP",
+      "question": "Quelle tâche identifie des personnes, organisations, lieux ou dates dans un texte ?",
+      "options": [
+        "Reconnaissance d'entités nommées (NER)",
+        "Pooling",
+        "Régression linéaire",
+        "Clustering K-Means"
+      ],
+      "correctIndex": 0,
+      "correction": "La NER extrait et classe des entités telles que personnes, organisations, lieux et expressions temporelles."
+    },
+    {
+      "id": "caip-quiz-complet-1-028",
+      "category": "NLP",
+      "question": "Quel avantage principal apporte TF-IDF par rapport à un simple Bag of Words ?",
+      "options": [
+        "Il pondère les termes selon leur importance relative dans un corpus",
+        "Il supprime tout vocabulaire",
+        "Il convertit automatiquement le texte en image",
+        "Il garantit l'absence de biais"
+      ],
+      "correctIndex": 0,
+      "correction": "TF-IDF réduit le poids des termes très fréquents et met davantage en valeur les mots discriminants dans un document."
+    },
+    {
+      "id": "caip-quiz-complet-1-029",
+      "category": "NLP moderne et LLM",
+      "question": "Quel mécanisme est central dans l'architecture Transformer ?",
+      "options": [
+        "L'attention",
+        "La dilatation morphologique",
+        "Le tri à bulles",
+        "Le chiffrement symétrique"
+      ],
+      "correctIndex": 0,
+      "correction": "Le Transformer s'appuie sur le mécanisme d'attention pour modéliser les relations entre éléments d'une séquence."
+    },
+    {
+      "id": "caip-quiz-complet-1-030",
+      "category": "NLP moderne et LLM",
+      "question": "Quelle architecture est particulièrement adaptée à la génération de texte autoregressive comme la série GPT ?",
+      "options": [
+        "Décodeur uniquement",
+        "Encodeur uniquement",
+        "K-Means",
+        "Réseau bayésien uniquement"
+      ],
+      "correctIndex": 0,
+      "correction": "Le cours présente GPT comme une architecture de type décodeur, particulièrement adaptée à la génération de texte."
+    },
+    {
+      "id": "caip-quiz-complet-1-031",
+      "category": "NLP moderne et LLM",
+      "question": "Que signifie un prompt « few-shot » ?",
+      "options": [
+        "Le prompt fournit quelques exemples avant la tâche à réaliser",
+        "Le modèle reçoit zéro instruction",
+        "Le modèle est entraîné sans données",
+        "Le prompt contient uniquement une URL"
+      ],
+      "correctIndex": 0,
+      "correction": "En few-shot prompting, quelques exemples guident le modèle sur la forme ou le raisonnement attendu."
+    },
+    {
+      "id": "caip-quiz-complet-1-032",
+      "category": "NLP moderne et LLM",
+      "question": "Qu'est-ce qu'une hallucination d'un modèle de langage ?",
+      "options": [
+        "Une réponse générée plausible mais factuellement incorrecte ou non fondée",
+        "Une panne matérielle d'un GPU",
+        "Une méthode de normalisation",
+        "Un type de clustering"
+      ],
+      "correctIndex": 0,
+      "correction": "Une hallucination correspond à un contenu produit avec assurance mais non correctement fondé dans les faits ou les données disponibles."
+    },
+    {
+      "id": "caip-quiz-complet-1-033",
+      "category": "Deep learning",
+      "question": "Quel rôle joue la propagation arrière ?",
+      "options": [
+        "Ajuster les poids en rétropropageant le gradient de l'erreur",
+        "Créer les données de test",
+        "Segmenter une image en clusters",
+        "Supprimer la fonction de perte"
+      ],
+      "correctIndex": 0,
+      "correction": "La rétropropagation calcule les gradients de la perte et met à jour les paramètres afin de réduire l'erreur."
+    },
+    {
+      "id": "caip-quiz-complet-1-034",
+      "category": "Deep learning",
+      "question": "Pourquoi utilise-t-on une fonction d'activation dans un réseau neuronal ?",
+      "options": [
+        "Introduire de la non-linéarité et contrôler l'activation des neurones",
+        "Remplacer les données d'entrée",
+        "Créer un nom de variable",
+        "Mesurer la taille du fichier"
+      ],
+      "correctIndex": 0,
+      "correction": "Les fonctions d'activation permettent au réseau de modéliser des relations non linéaires et déterminent la sortie des neurones."
+    },
+    {
+      "id": "caip-quiz-complet-1-035",
+      "category": "Deep learning",
+      "question": "Quel rôle joue le pooling dans un CNN ?",
+      "options": [
+        "Réduire les dimensions spatiales des cartes de caractéristiques",
+        "Augmenter systématiquement le nombre de pixels",
+        "Créer des labels humains",
+        "Traduire le texte"
+      ],
+      "correctIndex": 0,
+      "correction": "Le pooling réduit la taille spatiale, diminue la charge de calcul et apporte une certaine robustesse aux petits déplacements."
+    },
+    {
+      "id": "caip-quiz-complet-1-036",
+      "category": "IA générative et vision",
+      "question": "Dans un GAN, quels sont les deux réseaux en compétition ?",
+      "options": [
+        "Générateur et discriminateur",
+        "Encodeur et tokenizer",
+        "Capteur et actionneur",
+        "Client et serveur"
+      ],
+      "correctIndex": 0,
+      "correction": "Le générateur produit des données synthétiques et le discriminateur tente de distinguer les données réelles des données générées."
+    },
+    {
+      "id": "caip-quiz-complet-1-037",
+      "category": "Vision par ordinateur",
+      "question": "Que fait l'ouverture morphologique d'une image ?",
+      "options": [
+        "Érosion suivie de dilatation pour réduire de petits bruits",
+        "Dilatation suivie d'érosion pour combler des lacunes",
+        "Rotation puis recadrage",
+        "Conversion RGB vers audio"
+      ],
+      "correctIndex": 0,
+      "correction": "L'ouverture combine érosion puis dilatation afin de supprimer de petits éléments indésirables tout en préservant la structure globale."
+    },
+    {
+      "id": "caip-quiz-complet-1-038",
+      "category": "Robotique, sécurité et gouvernance",
+      "question": "Quel composant robotique joue le rôle de « muscles » pour produire le mouvement ?",
+      "options": [
+        "Actionneurs et servomoteurs",
+        "Base de connaissances",
+        "Jeu de test",
+        "Tokenizers"
+      ],
+      "correctIndex": 0,
+      "correction": "Les actionneurs, moteurs et servomoteurs transforment l'énergie en mouvement et assurent le contrôle physique du robot."
+    },
+    {
+      "id": "caip-quiz-complet-1-039",
+      "category": "Robotique, sécurité et gouvernance",
+      "question": "Quel risque décrit le fait de cacher des instructions malveillantes dans un contenu fourni à un LLM ?",
+      "options": [
+        "Injection d'invite",
+        "Validation croisée",
+        "Régularisation",
+        "Pooling"
+      ],
+      "correctIndex": 0,
+      "correction": "L'injection d'invite vise à faire suivre au modèle des instructions non prévues, parfois cachées dans un contenu ou un document."
+    },
+    {
+      "id": "caip-quiz-complet-1-040",
+      "category": "Robotique, sécurité et gouvernance",
+      "question": "Quel principe de gouvernance est le plus cohérent avec un projet d'IA responsable ?",
+      "options": [
+        "Définir des objectifs mesurables, évaluer les risques et intégrer l'éthique tout au long du cycle de vie",
+        "Déployer sans validation",
+        "Éviter toute implication des parties prenantes",
+        "Ignorer les obligations réglementaires"
+      ],
+      "correctIndex": 0,
+      "correction": "Le cours insiste sur des objectifs clairs, l'évaluation des risques, la conformité, l'implication des parties prenantes et l'intégration de l'éthique à chaque phase."
+    }
+  ]
+}

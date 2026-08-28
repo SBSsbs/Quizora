@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Apache Spark</title>
+  <desc id="desc">Illustration générique en forme d'étoile pour une formation Big Data.</desc>
+  <rect width="512" height="512" rx="96" fill="#fff4ec"/>
+  <path d="M256 72 307 185l126 15-94 84 28 126-111-64-111 64 28-126-94-84 126-15 51-113Z" fill="none" stroke="#f97316" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

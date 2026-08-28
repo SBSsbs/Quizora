@@ -1,0 +1,528 @@
+{
+  "id": "caip-quiz-complet-2",
+  "title": "CAIP — Quiz complet 2",
+  "description": "40 questions de révision complémentaires couvrant les principales thématiques des supports de cours CAIP Jour 1 à Jour 4.",
+  "version": "2.0",
+  "questions": [
+    {
+      "id": "caip-quiz-complet-2-001",
+      "category": "Fondamentaux de l'IA",
+      "question": "Quel système expert précoce de 1965 était spécialisé dans la chimie moléculaire ?",
+      "options": [
+        "DENDRAL",
+        "ELIZA",
+        "AlphaGo",
+        "Watson"
+      ],
+      "correctIndex": 0,
+      "correction": "DENDRAL, développé par Edward Feigenbaum et Joshua Lederberg, est présenté comme un système expert précoce en chimie moléculaire."
+    },
+    {
+      "id": "caip-quiz-complet-2-002",
+      "category": "Fondamentaux de l'IA",
+      "question": "Quelle performance de Deep Blue est citée pour sa victoire de 1997 contre Garry Kasparov ?",
+      "options": [
+        "Environ 200 millions de mouvements analysés par seconde",
+        "Environ 200 mouvements par minute",
+        "Un apprentissage sans recherche",
+        "Une génération de texte en temps réel"
+      ],
+      "correctIndex": 0,
+      "correction": "Le support indique que Deep Blue pouvait traiter environ 200 millions de mouvements par seconde grâce à une recherche systématique."
+    },
+    {
+      "id": "caip-quiz-complet-2-003",
+      "category": "Fondamentaux de l'IA",
+      "question": "Quel jalon de 2011 illustre l'essor de l'IA dans le traitement du langage ?",
+      "options": [
+        "Watson remporte Jeopardy",
+        "AlphaGo gagne au Go",
+        "DALL-E est lancé",
+        "GPT-4 est publié"
+      ],
+      "correctIndex": 0,
+      "correction": "En 2011, Watson d'IBM, système orienté NLP et questions-réponses, remporte Jeopardy face à d'anciens champions."
+    },
+    {
+      "id": "caip-quiz-complet-2-004",
+      "category": "Fondamentaux de l'IA",
+      "question": "Combien de paramètres GPT-3 compte-t-il selon le cours ?",
+      "options": [
+        "17,5 milliards",
+        "75 milliards",
+        "175 milliards",
+        "1 750 milliards"
+      ],
+      "correctIndex": 2,
+      "correction": "Le support indique que GPT-3 compte 175 milliards de paramètres."
+    },
+    {
+      "id": "caip-quiz-complet-2-005",
+      "category": "Fondamentaux de l'IA",
+      "question": "Quelle proposition décrit un agent intelligent ?",
+      "options": [
+        "Une entité qui perçoit son environnement et agit pour atteindre des objectifs",
+        "Une base de données sans logique",
+        "Un graphique de dispersion",
+        "Un fichier de configuration"
+      ],
+      "correctIndex": 0,
+      "correction": "Un agent intelligent observe son environnement, traite l'information et choisit des actions pour poursuivre des objectifs."
+    },
+    {
+      "id": "caip-quiz-complet-2-006",
+      "category": "Analyse et visualisation des données",
+      "question": "Que signifie l'idée « garbage in, garbage out » ?",
+      "options": [
+        "Des entrées de mauvaise qualité conduisent à des résultats de mauvaise qualité",
+        "Les données doivent être supprimées après analyse",
+        "Les modèles corrigent automatiquement toutes les erreurs",
+        "Les doublons améliorent toujours la précision"
+      ],
+      "correctIndex": 0,
+      "correction": "La qualité des résultats dépend fortement de la qualité des données d'entrée ; des données mauvaises ou biaisées dégradent les conclusions."
+    },
+    {
+      "id": "caip-quiz-complet-2-007",
+      "category": "Analyse et visualisation des données",
+      "question": "Quel type d'analyse cherche à expliquer pourquoi un événement ou une anomalie s'est produit ?",
+      "options": [
+        "Descriptive",
+        "Diagnostique",
+        "Prédictive",
+        "Prescriptive"
+      ],
+      "correctIndex": 1,
+      "correction": "L'analyse diagnostique cherche les causes et facteurs qui expliquent une tendance ou un résultat observé."
+    },
+    {
+      "id": "caip-quiz-complet-2-008",
+      "category": "Analyse et visualisation des données",
+      "question": "Quel type d'analyse recommande des actions pour influencer un résultat futur ?",
+      "options": [
+        "Prescriptive",
+        "Descriptive",
+        "Exploratoire uniquement",
+        "Archivistique"
+      ],
+      "correctIndex": 0,
+      "correction": "L'analyse prescriptive va au-delà de la prévision et recommande des actions susceptibles d'améliorer le résultat recherché."
+    },
+    {
+      "id": "caip-quiz-complet-2-009",
+      "category": "Analyse et visualisation des données",
+      "question": "Quel graphique est généralement adapté pour montrer une évolution au fil du temps ?",
+      "options": [
+        "Graphique linéaire",
+        "Camembert uniquement",
+        "Nuage de mots",
+        "Diagramme de Venn"
+      ],
+      "correctIndex": 0,
+      "correction": "Un graphique linéaire est adapté pour représenter une série chronologique et mettre en évidence une tendance dans le temps."
+    },
+    {
+      "id": "caip-quiz-complet-2-010",
+      "category": "Apprentissage automatique",
+      "question": "Dans la programmation traditionnelle, comment les règles sont-elles généralement définies ?",
+      "options": [
+        "Elles sont écrites explicitement par le programmeur",
+        "Elles sont toujours découvertes par clustering",
+        "Elles sont générées uniquement par un GAN",
+        "Elles proviennent d'un capteur LiDAR"
+      ],
+      "correctIndex": 0,
+      "correction": "La programmation traditionnelle applique des règles explicitement codées aux données, tandis que le ML apprend des motifs à partir d'exemples."
+    },
+    {
+      "id": "caip-quiz-complet-2-011",
+      "category": "Apprentissage automatique",
+      "question": "Quelle métrique est la moyenne harmonique de la précision et du rappel ?",
+      "options": [
+        "Score F1",
+        "MSE",
+        "Variance",
+        "IQR"
+      ],
+      "correctIndex": 0,
+      "correction": "Le score F1 combine précision et rappel par leur moyenne harmonique, utile notamment sur des classes déséquilibrées."
+    },
+    {
+      "id": "caip-quiz-complet-2-012",
+      "category": "Apprentissage automatique",
+      "question": "Quelle fonction de perte est couramment utilisée pour un problème de régression selon le support ?",
+      "options": [
+        "MSE",
+        "Entropie croisée uniquement",
+        "Silhouette",
+        "BLEU"
+      ],
+      "correctIndex": 0,
+      "correction": "Le support cite la MSE comme fonction de perte typique pour la régression, fondée sur les erreurs quadratiques."
+    },
+    {
+      "id": "caip-quiz-complet-2-013",
+      "category": "Apprentissage automatique",
+      "question": "Quel optimiseur adapte dynamiquement le taux d'apprentissage en combinant notamment momentum et RMSProp ?",
+      "options": [
+        "Adam",
+        "K-Means",
+        "TF-IDF",
+        "PCA uniquement"
+      ],
+      "correctIndex": 0,
+      "correction": "Adam adapte les mises à jour des paramètres et combine des idées de momentum et RMSProp pour rendre l'optimisation efficace."
+    },
+    {
+      "id": "caip-quiz-complet-2-014",
+      "category": "Apprentissage automatique",
+      "question": "Quel mécanisme est utilisé par un agent DeepRacer pour apprendre à rester sur la piste ?",
+      "options": [
+        "Récompenses et pénalités au fil des épisodes",
+        "Labels fixes pour chaque pixel",
+        "Règles d'association uniquement",
+        "Tri alphabétique"
+      ],
+      "correctIndex": 0,
+      "correction": "DeepRacer illustre l'apprentissage par renforcement : l'agent reçoit des récompenses ou pénalités et améliore sa politique au fil des essais."
+    },
+    {
+      "id": "caip-quiz-complet-2-015",
+      "category": "Apprentissage automatique",
+      "question": "Dans K-Means, que représente K ?",
+      "options": [
+        "Le nombre de groupes recherchés",
+        "Le nombre de couches du réseau",
+        "La taille du jeu de test",
+        "Le taux d'apprentissage"
+      ],
+      "correctIndex": 0,
+      "correction": "K est le nombre de clusters que l'algorithme doit former."
+    },
+    {
+      "id": "caip-quiz-complet-2-016",
+      "category": "Apprentissage automatique",
+      "question": "À quoi sert une règle d'association ?",
+      "options": [
+        "Découvrir des relations fréquentes entre éléments ou événements",
+        "Prédire une valeur continue uniquement",
+        "Générer une image",
+        "Détecter des contours"
+      ],
+      "correctIndex": 0,
+      "correction": "Les règles d'association cherchent des cooccurrences ou relations fréquentes, par exemple entre produits achetés ensemble."
+    },
+    {
+      "id": "caip-quiz-complet-2-017",
+      "category": "Apprentissage automatique",
+      "question": "Pourquoi surveiller un modèle après son déploiement ?",
+      "options": [
+        "Pour détecter une dégradation de performance ou un changement des données",
+        "Pour supprimer toute traçabilité",
+        "Pour empêcher la mise à jour des données",
+        "Pour éviter les utilisateurs"
+      ],
+      "correctIndex": 0,
+      "correction": "La surveillance permet de vérifier que le modèle reste efficace lorsque les données et le contexte évoluent."
+    },
+    {
+      "id": "caip-quiz-complet-2-018",
+      "category": "NLP classique",
+      "question": "Quelle tâche attribue à chaque mot une catégorie grammaticale comme nom, verbe ou adjectif ?",
+      "options": [
+        "POS tagging",
+        "Clustering",
+        "Pooling",
+        "OCR uniquement"
+      ],
+      "correctIndex": 0,
+      "correction": "Le Part-of-Speech tagging attribue aux mots des rôles grammaticaux, utiles pour l'analyse syntaxique et sémantique."
+    },
+    {
+      "id": "caip-quiz-complet-2-019",
+      "category": "NLP classique",
+      "question": "Pourquoi la NER peut-elle être difficile avec un mot comme « Amazon » ?",
+      "options": [
+        "Le mot peut désigner des entités différentes selon le contexte",
+        "Le mot est toujours un nombre",
+        "La NER ne traite que des images",
+        "Le terme n'existe dans aucune langue"
+      ],
+      "correctIndex": 0,
+      "correction": "La NER doit résoudre des ambiguïtés contextuelles : « Amazon » peut désigner une entreprise ou un fleuve."
+    },
+    {
+      "id": "caip-quiz-complet-2-020",
+      "category": "NLP classique",
+      "question": "Quel est l'intérêt principal des word embeddings ?",
+      "options": [
+        "Représenter les mots par des vecteurs capturant des relations sémantiques",
+        "Supprimer les mots rares",
+        "Créer des tableaux de bord",
+        "Définir le nombre de clusters"
+      ],
+      "correctIndex": 0,
+      "correction": "Les word embeddings encodent les mots sous forme de vecteurs continus où des relations sémantiques peuvent être représentées."
+    },
+    {
+      "id": "caip-quiz-complet-2-021",
+      "category": "NLP classique",
+      "question": "Que cherchent à représenter les document embeddings ?",
+      "options": [
+        "Le sens global d'un document ou d'une phrase sous forme vectorielle",
+        "Uniquement la longueur d'un fichier",
+        "La couleur d'une image",
+        "Le nombre de capteurs d'un robot"
+      ],
+      "correctIndex": 0,
+      "correction": "Les embeddings de documents condensent le contenu d'une phrase ou d'un document en une représentation vectorielle globale."
+    },
+    {
+      "id": "caip-quiz-complet-2-022",
+      "category": "NLP moderne et LLM",
+      "question": "Pourquoi le mécanisme d'attention a-t-il été important pour les modèles de langage modernes ?",
+      "options": [
+        "Il aide le modèle à pondérer les relations entre éléments d'une séquence",
+        "Il remplace toutes les données d'entraînement",
+        "Il sert uniquement à compresser les images",
+        "Il impose des règles symboliques fixes"
+      ],
+      "correctIndex": 0,
+      "correction": "L'attention permet au modèle de prendre en compte les relations pertinentes entre tokens, y compris à longue distance."
+    },
+    {
+      "id": "caip-quiz-complet-2-023",
+      "category": "NLP moderne et LLM",
+      "question": "Quelle architecture associe un encodeur et un décodeur et convient à des tâches comme la traduction ?",
+      "options": [
+        "Encodeur-décodeur",
+        "Décodeur uniquement",
+        "K-Means",
+        "RBM uniquement"
+      ],
+      "correctIndex": 0,
+      "correction": "Les architectures encodeur-décodeur transforment une séquence d'entrée en représentation puis génèrent une séquence de sortie, ce qui convient à la traduction."
+    },
+    {
+      "id": "caip-quiz-complet-2-024",
+      "category": "NLP moderne et LLM",
+      "question": "Quel modèle cité dans le cours est multimodal et peut traiter texte, images, audio et vidéo ?",
+      "options": [
+        "Gemini",
+        "K-Means",
+        "DENDRAL",
+        "DeepRacer"
+      ],
+      "correctIndex": 0,
+      "correction": "Le cours présente la série Gemini comme un LLM multimodal capable de traiter plusieurs types de données, notamment texte, images, audio et vidéo."
+    },
+    {
+      "id": "caip-quiz-complet-2-025",
+      "category": "NLP moderne et LLM",
+      "question": "Dans une application multimodale, pourquoi combiner texte et image peut-il améliorer une réponse ?",
+      "options": [
+        "Les modalités apportent des informations complémentaires et réduisent certaines ambiguïtés",
+        "Parce que le texte devient inutile",
+        "Parce que le modèle n'a plus besoin d'entraînement",
+        "Parce que les images fournissent toujours la réponse exacte"
+      ],
+      "correctIndex": 0,
+      "correction": "Les modalités se complètent : l'image peut fournir un contexte absent du texte et inversement, ce qui améliore certaines tâches comme VQA ou traduction multimodale."
+    },
+    {
+      "id": "caip-quiz-complet-2-026",
+      "category": "NLP moderne et LLM",
+      "question": "Quelle pratique de prompt fournit uniquement l'instruction sans exemple ?",
+      "options": [
+        "Zero-shot prompting",
+        "Few-shot prompting",
+        "Clustering",
+        "Backpropagation"
+      ],
+      "correctIndex": 0,
+      "correction": "Le zero-shot prompting demande au modèle d'exécuter la tâche sans lui fournir d'exemple dans le prompt."
+    },
+    {
+      "id": "caip-quiz-complet-2-027",
+      "category": "Deep learning",
+      "question": "Quel avantage majeur des CNN vient du partage des filtres sur l'image ?",
+      "options": [
+        "Réduire le nombre de paramètres et exploiter la structure spatiale",
+        "Garantir une explication parfaite",
+        "Éliminer le besoin de données",
+        "Convertir le texte en audio"
+      ],
+      "correctIndex": 0,
+      "correction": "Les mêmes filtres sont appliqués à plusieurs régions, ce qui réduit les paramètres et exploite efficacement les motifs locaux."
+    },
+    {
+      "id": "caip-quiz-complet-2-028",
+      "category": "Deep learning",
+      "question": "Quel type de réseau est particulièrement adapté aux séquences et à la dépendance temporelle ?",
+      "options": [
+        "RNN",
+        "K-Means",
+        "Arbre de décision uniquement",
+        "GAN sans discriminateur"
+      ],
+      "correctIndex": 0,
+      "correction": "Les réseaux récurrents sont conçus pour traiter des séquences et exploiter l'information provenant d'étapes précédentes."
+    },
+    {
+      "id": "caip-quiz-complet-2-029",
+      "category": "IA générative, vision et robotique",
+      "question": "Quel rôle joue le discriminateur dans un GAN ?",
+      "options": [
+        "Distinguer les données réelles des données générées",
+        "Créer uniquement le bruit aléatoire",
+        "Étiqueter les données de test",
+        "Contrôler un robot physique"
+      ],
+      "correctIndex": 0,
+      "correction": "Le discriminateur apprend à séparer vraies et fausses données et fournit un signal d'apprentissage au générateur."
+    },
+    {
+      "id": "caip-quiz-complet-2-030",
+      "category": "IA générative, vision et robotique",
+      "question": "Quelle architecture générative compresse les données dans une représentation réduite puis apprend à les reconstruire ?",
+      "options": [
+        "Autoencodeur variationnel (VAE)",
+        "K-Means",
+        "Arbre de décision",
+        "SVM"
+      ],
+      "correctIndex": 0,
+      "correction": "Un VAE encode les données dans un espace latent puis apprend à générer ou reconstruire des données à partir de cette représentation."
+    },
+    {
+      "id": "caip-quiz-complet-2-031",
+      "category": "IA générative, vision et robotique",
+      "question": "Quel avantage principal le système Tesla Vision cherche-t-il à obtenir avec des caméras autour du véhicule ?",
+      "options": [
+        "Percevoir voies, véhicules, piétons et signaux afin de prendre des décisions de conduite",
+        "Remplacer tout apprentissage",
+        "Générer des textes juridiques",
+        "Éviter toute collecte de données"
+      ],
+      "correctIndex": 0,
+      "correction": "Le système traite les flux des caméras avec des réseaux profonds pour détecter la scène routière et soutenir les fonctions autonomes."
+    },
+    {
+      "id": "caip-quiz-complet-2-032",
+      "category": "IA générative, vision et robotique",
+      "question": "À quoi sert ROS dans le domaine de la robotique ?",
+      "options": [
+        "Fournir un écosystème d'outils et de logiciels pour développer des systèmes robotiques",
+        "Mesurer la précision d'un classifieur",
+        "Créer une base TF-IDF",
+        "Compiler des modèles GPT"
+      ],
+      "correctIndex": 0,
+      "correction": "ROS fournit des outils, bibliothèques et mécanismes de communication utiles au développement de systèmes robotiques."
+    },
+    {
+      "id": "caip-quiz-complet-2-033",
+      "category": "Sécurité, éthique et gouvernance",
+      "question": "Qu'est-ce que l'empoisonnement des données ?",
+      "options": [
+        "L'introduction de données malveillantes ou trompeuses dans le processus d'apprentissage",
+        "Une méthode de compression",
+        "Un type de visualisation",
+        "Une métrique de rappel"
+      ],
+      "correctIndex": 0,
+      "correction": "L'empoisonnement cherche à influencer le comportement du modèle en contaminant les données utilisées pour l'entraînement ou l'apprentissage."
+    },
+    {
+      "id": "caip-quiz-complet-2-034",
+      "category": "Sécurité, éthique et gouvernance",
+      "question": "Quel risque est lié à la divulgation de l'invite système d'un LLM ?",
+      "options": [
+        "Des instructions ou secrets internes peuvent être exposés et exploités",
+        "Le modèle devient automatiquement plus précis",
+        "Les images sont compressées",
+        "Le nombre de classes diminue"
+      ],
+      "correctIndex": 0,
+      "correction": "Une fuite de l'invite système peut révéler des règles internes, des informations sensibles ou faciliter des attaques de contournement."
+    },
+    {
+      "id": "caip-quiz-complet-2-035",
+      "category": "Sécurité, éthique et gouvernance",
+      "question": "Quel est l'objectif de l'IA explicable (XAI) ?",
+      "options": [
+        "Rendre les décisions des systèmes plus compréhensibles et interprétables",
+        "Cacher les décisions aux utilisateurs",
+        "Remplacer toutes les métriques",
+        "Supprimer les données d'entraînement"
+      ],
+      "correctIndex": 0,
+      "correction": "La XAI vise à fournir des explications sur le fonctionnement et les décisions des modèles afin de renforcer transparence et confiance."
+    },
+    {
+      "id": "caip-quiz-complet-2-036",
+      "category": "Sécurité, éthique et gouvernance",
+      "question": "Quelle approche réduit le risque de biais algorithmique ?",
+      "options": [
+        "Évaluer la représentativité des données et réaliser des vérifications d'équité",
+        "Ignorer les classes minoritaires",
+        "Masquer les résultats",
+        "Supprimer la validation"
+      ],
+      "correctIndex": 0,
+      "correction": "Une IA responsable nécessite d'identifier les biais dans les données et les modèles, puis d'appliquer des contrôles d'équité et des mesures d'atténuation."
+    },
+    {
+      "id": "caip-quiz-complet-2-037",
+      "category": "Sécurité, éthique et gouvernance",
+      "question": "Quel principe du règlement européen sur l'IA est cité dans le cours ?",
+      "options": [
+        "Classer les systèmes selon leur niveau de risque et imposer des obligations adaptées",
+        "Interdire toute utilisation de l'IA",
+        "Autoriser tout système sans contrôle",
+        "Remplacer le RGPD"
+      ],
+      "correctIndex": 0,
+      "correction": "Le support indique que l'AI Act adopte une approche fondée sur le risque, avec des obligations variables selon la catégorie du système."
+    },
+    {
+      "id": "caip-quiz-complet-2-038",
+      "category": "Sécurité, éthique et gouvernance",
+      "question": "Que promeut la notion de Green AI ?",
+      "options": [
+        "Des approches plus économes en ressources et attentives à l'impact environnemental",
+        "Des modèles obligatoirement plus grands",
+        "L'absence de mesure énergétique",
+        "L'utilisation exclusive de données vertes"
+      ],
+      "correctIndex": 0,
+      "correction": "Green AI met l'accent sur l'efficacité énergétique, la réduction des coûts de calcul et une recherche plus durable."
+    },
+    {
+      "id": "caip-quiz-complet-2-039",
+      "category": "Sécurité, éthique et gouvernance",
+      "question": "Quel est l'intérêt d'impliquer les parties prenantes dans la gouvernance d'un projet d'IA ?",
+      "options": [
+        "Améliorer la prise de décision, la confiance et l'adoption",
+        "Éviter toute responsabilité",
+        "Supprimer la documentation",
+        "Empêcher l'évaluation des risques"
+      ],
+      "correctIndex": 0,
+      "correction": "Le dialogue avec employés, clients, partenaires et autres parties prenantes aide à mieux identifier les besoins, risques et conditions d'adoption."
+    },
+    {
+      "id": "caip-quiz-complet-2-040",
+      "category": "Sécurité, éthique et gouvernance",
+      "question": "Que signifie fixer des objectifs SMART dans la planification d'un projet d'IA ?",
+      "options": [
+        "Définir des objectifs spécifiques, mesurables, atteignables, réalistes et temporellement définis",
+        "Choisir uniquement les modèles les plus grands",
+        "Éliminer les jalons",
+        "Ne pas mesurer les résultats"
+      ],
+      "correctIndex": 0,
+      "correction": "Les objectifs SMART donnent une direction mesurable au projet et servent de critères concrets de réussite."
+    }
+  ]
+}

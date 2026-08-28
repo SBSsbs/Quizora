@@ -3,45 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Application de quiz pour sessions de formation">
-  <title>Quiz Formation</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Quizora — plateforme de quiz pour la formation professionnelle">
+  <meta name="theme-color" content="#2563eb">
+  <title>Quizora — Quiz de formation</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=9.0.0">
 </head>
 <body>
+  <div class="page-decor decor-one" aria-hidden="true"></div>
+  <div class="page-decor decor-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="./" aria-label="Quizora — Accueil">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none"><path d="M3 8.4 12 4l9 4.4-9 4.4-9-4.4Z" fill="currentColor"/><path d="M6.5 10.2v4.4c0 1.2 2.5 3.1 5.5 3.1s5.5-1.9 5.5-3.1v-4.4L12 13l-5.5-2.8Z" fill="currentColor" opacity=".92"/></svg>
+      </span>
+      <span>
+        <strong>Quizora</strong>
+        <small>Testez vos connaissances. Validez vos acquis.</small>
+      </span>
+    </a>
+    <div class="header-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8.4 12 4l9 4.4-9 4.4-9-4.4Z"/><path d="M6.5 10.2v4.4c0 1.2 2.5 3.1 5.5 3.1s5.5-1.9 5.5-3.1v-4.4"/><path d="M21 8.4v5"/></svg>
+    </div>
+  </header>
+
   <main class="app-shell">
-    <section class="card" id="home-screen">
-      <div class="brand">FORMATION • QUIZ</div>
-      <h1 id="formation-title">Chargement…</h1>
-      <p id="formation-description" class="muted"></p>
+    <section class="card home-card" id="home-screen">
+      <div class="home-heading">
+        <div class="brand">FORMATION • QUIZ</div>
+        <h1 id="formation-title">Chargement…</h1>
+        <div class="title-accent" aria-hidden="true"></div>
+        <p id="formation-description" class="muted"></p>
+      </div>
+
       <div id="formation-picker" class="picker hidden"></div>
 
       <div id="participant-form" class="participant-form hidden">
-        <label for="participant-name">Votre nom ou identifiant</label>
-        <input id="participant-name" type="text" maxlength="80" placeholder="Ex. Marie Dupont">
-        <button id="start-btn" class="primary">Commencer le quiz</button>
+        <div class="selected-training" id="selected-training-summary"></div>
+        <div class="participant-fields">
+          <div class="field-group">
+            <label for="participant-name">Votre nom ou identifiant</label>
+            <input id="participant-name" type="text" maxlength="80" placeholder="Ex. Marie Dupont" autocomplete="name" required>
+          </div>
+          <div class="field-group">
+            <label for="participant-email">Votre adresse e-mail</label>
+            <input id="participant-email" type="email" maxlength="120" placeholder="Ex. marie.dupont@entreprise.fr" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="participant-actions">
+          <button id="start-btn" class="primary">Commencer le quiz</button>
+        </div>
+        <p id="participant-error" class="form-error hidden" role="alert"></p>
+        <p class="form-note">Votre nom, votre adresse e-mail et vos réponses restent dans votre navigateur. Ils sont utilisés pour créer votre rapport PDF et ne sont envoyés à aucun serveur par cette version de Quizora.</p>
       </div>
+
       <p id="load-error" class="error hidden"></p>
+      <div id="privacy-note" class="privacy-note hidden">
+        <span class="privacy-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 5.5 5.8v5.6c0 4.2 2.8 7.9 6.5 9.6 3.7-1.7 6.5-5.4 6.5-9.6V5.8L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <span>Aucune donnée n'est transmise par cette version. Votre identité, votre e-mail et vos réponses restent dans votre navigateur et servent à générer votre rapport PDF.</span>
+      </div>
     </section>
 
-    <section class="card hidden" id="quiz-screen">
+    <section class="card quiz-card hidden" id="quiz-screen">
       <div class="quiz-topbar">
         <span id="progress-text"></span>
-        <span id="score-live"></span>
+        <span id="answer-progress">Réponses enregistrées : 0</span>
       </div>
       <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
       <p id="question-category" class="eyebrow"></p>
       <h2 id="question-text"></h2>
       <div id="answers" class="answers"></div>
-      <div id="feedback" class="feedback hidden"></div>
+      <p class="quiz-info">Votre réponse est enregistrée sans correction immédiate. Les bonnes réponses et les explications seront disponibles uniquement à la fin du quiz.</p>
       <button id="next-btn" class="primary hidden">Question suivante</button>
     </section>
 
-    <section class="card hidden" id="result-screen">
+    <section class="card result-card hidden" id="result-screen">
       <div class="brand">RÉSULTAT</div>
       <h1>Quiz terminé</h1>
       <p id="participant-result" class="muted"></p>
       <div id="final-score" class="final-score"></div>
       <p id="final-message"></p>
+      <div class="result-meta" id="result-meta"></div>
+      <div id="theme-breakdown" class="theme-breakdown"></div>
+      <div class="report-panel">
+        <div>
+          <strong>Rapport individuel</strong>
+          <p>Téléchargez un PDF contenant votre score, vos réponses, les réponses attendues et les corrections.</p>
+        </div>
+        <button id="pdf-btn" class="primary pdf-button" type="button">Télécharger mon rapport PDF</button>
+      </div>
+      <p id="pdf-error" class="form-error hidden" role="alert"></p>
       <div id="review" class="review"></div>
       <div class="actions">
         <button id="restart-btn" class="primary">Recommencer</button>
@@ -50,6 +103,8 @@
     </section>
   </main>
 
-  <script src="assets/js/app.js"></script>
+  <footer class="site-footer">© <span id="current-year"></span> Quizora • Tous droits réservés</footer>
+
+  <script src="assets/js/app.js?v=9.0.0"></script>
 </body>
 </html>

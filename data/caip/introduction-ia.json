@@ -1,0 +1,168 @@
+{
+  "id": "caip-introduction-ia",
+  "title": "CAIP — Introduction à l'IA",
+  "description": "Quiz de 20 questions couvrant la section Introduction à l'IA (slides 17 à 47).",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "caip-intro-001",
+      "category": "Histoire de l'IA",
+      "question": "Qui a publié en 1950 l'article « Computing Machinery and Intelligence » à l'origine du test éponyme ?",
+      "options": ["John McCarthy", "Alan Turing", "Marvin Minsky", "Joseph Weizenbaum"],
+      "correctIndex": 1,
+      "correction": "Alan Turing a publié en 1950 l'article « Computing Machinery and Intelligence », qui introduit le principe aujourd'hui associé au test de Turing."
+    },
+    {
+      "id": "caip-intro-002",
+      "category": "Histoire de l'IA",
+      "question": "Où et quand le terme « intelligence artificielle » a-t-il été officiellement consacré ?",
+      "options": ["Au projet de recherche d'été de Dartmouth en 1956", "À la conférence de Stanford en 1965", "Au MIT en 1950", "Lors de la création de Deep Blue en 1997"],
+      "correctIndex": 0,
+      "correction": "Le terme « intelligence artificielle » a été consacré lors du projet de recherche d'été de Dartmouth (DSRPAI) en 1956, avec John McCarthy parmi les organisateurs et promoteurs du terme."
+    },
+    {
+      "id": "caip-intro-003",
+      "category": "Histoire de l'IA",
+      "question": "Quel programme de 1965 est considéré comme un système expert précoce en chimie moléculaire ?",
+      "options": ["ELIZA", "DENDRAL", "Deep Blue", "Kismet"],
+      "correctIndex": 1,
+      "correction": "DENDRAL est considéré comme l'un des premiers systèmes experts et a été développé pour aider à analyser des structures moléculaires en chimie."
+    },
+    {
+      "id": "caip-intro-004",
+      "category": "Histoire de l'IA",
+      "question": "En 1997, Deep Blue bat Garry Kasparov. Quelle capacité de traitement démontrait-il selon le cours ?",
+      "options": ["Environ 2 millions de mouvements par seconde", "Environ 20 millions de mouvements par seconde", "Environ 200 millions de mouvements par seconde", "Environ 2 milliards de mouvements par seconde"],
+      "correctIndex": 2,
+      "correction": "Selon le cours, Deep Blue pouvait analyser environ 200 millions de mouvements par seconde grâce à une recherche systématique de type force brute."
+    },
+    {
+      "id": "caip-intro-005",
+      "category": "Histoire de l'IA",
+      "question": "Quelle association entre jalon et année est correcte ?",
+      "options": ["Watson : 2011 / Google chats : 2012 / AlphaGo : 2016", "Watson : 2012 / Google chats : 2011 / AlphaGo : 2016", "Watson : 2016 / Google chats : 2012 / AlphaGo : 2011", "Watson : 2011 / Google chats : 2016 / AlphaGo : 2012"],
+      "correctIndex": 0,
+      "correction": "Les jalons sont : Watson gagne à Jeopardy en 2011, le réseau de neurones de Google identifie des chats en 2012 et AlphaGo bat le champion du monde de Go en 2016."
+    },
+    {
+      "id": "caip-intro-006",
+      "category": "Histoire de l'IA",
+      "question": "Combien de paramètres compte GPT-3 ?",
+      "options": ["1,75 milliard", "17,5 milliards", "175 milliards", "1 750 milliards"],
+      "correctIndex": 2,
+      "correction": "GPT-3 compte 175 milliards de paramètres."
+    },
+    {
+      "id": "caip-intro-007",
+      "category": "Concepts fondamentaux",
+      "question": "Quelle relation décrit correctement l'IA, l'apprentissage automatique et l'apprentissage profond ?",
+      "options": ["L'apprentissage profond est un sous-ensemble du machine learning, lui-même sous-ensemble de l'IA", "L'IA est un sous-ensemble de l'apprentissage profond", "Le machine learning et l'IA sont totalement indépendants", "L'apprentissage profond englobe toute l'IA"],
+      "correctIndex": 0,
+      "correction": "L'apprentissage profond est un sous-ensemble de l'apprentissage automatique, lui-même considéré comme un sous-ensemble de l'intelligence artificielle."
+    },
+    {
+      "id": "caip-intro-008",
+      "category": "Concepts fondamentaux",
+      "question": "Quelles sont les deux grandes approches de l'IA illustrées dans le cours, et quel compromis est associé à l'apprentissage automatique/profond ?",
+      "options": ["IA symbolique et apprentissage automatique/profond ; ce dernier peut être très performant mais plus opaque", "IA analogique et IA quantique ; la seconde consomme toujours moins d'énergie", "IA supervisée et IA non supervisée ; la seconde est toujours explicable", "IA locale et IA cloud ; la seconde ne nécessite aucune donnée"],
+      "correctIndex": 0,
+      "correction": "Le cours distingue l'IA symbolique, fondée notamment sur le raisonnement et les bases de connaissances, et l'apprentissage automatique/profond, performant mais pouvant devenir difficile à expliquer, d'où l'effet « boîte noire »."
+    },
+    {
+      "id": "caip-intro-009",
+      "category": "Concepts fondamentaux",
+      "question": "Quels deux frameworks de développement d'algorithmes de machine learning sont mentionnés dans le cours ?",
+      "options": ["TensorFlow et PyTorch", "React et Angular", "Docker et Kubernetes", "Hadoop et Kafka"],
+      "correctIndex": 0,
+      "correction": "TensorFlow et PyTorch sont deux frameworks largement utilisés pour développer et entraîner des modèles de machine learning et de deep learning."
+    },
+    {
+      "id": "caip-intro-010",
+      "category": "Concepts fondamentaux",
+      "question": "Selon l'ISO/IEC 22989, quel type d'apprentissage utilise des données étiquetées durant l'entraînement ?",
+      "options": ["Non supervisé", "Supervisé", "Par renforcement", "Semi-supervisé uniquement"],
+      "correctIndex": 1,
+      "correction": "L'apprentissage supervisé utilise des exemples d'entraînement auxquels sont associées des étiquettes ou des sorties attendues."
+    },
+    {
+      "id": "caip-intro-011",
+      "category": "Concepts fondamentaux",
+      "question": "Dans quel cas l'apprentissage semi-supervisé est-il particulièrement utile ?",
+      "options": ["Quand toutes les données sont déjà parfaitement étiquetées", "Quand l'étiquetage complet d'un grand jeu de données serait trop coûteux ou trop long", "Quand aucune donnée n'est disponible", "Quand on souhaite supprimer toute phase de validation"],
+      "correctIndex": 1,
+      "correction": "L'apprentissage semi-supervisé est utile lorsqu'on dispose de beaucoup de données mais que seule une partie peut être étiquetée, car l'étiquetage complet serait trop coûteux ou trop long."
+    },
+    {
+      "id": "caip-intro-012",
+      "category": "Concepts fondamentaux",
+      "question": "Comment un agent apprend-il en apprentissage par renforcement ?",
+      "options": ["En mémorisant uniquement un ensemble fixe de règles", "Par essais et erreurs, en ajustant son comportement selon la rétroaction de l'environnement pour maximiser les récompenses", "En utilisant exclusivement des données étiquetées", "En supprimant toute interaction avec l'environnement"],
+      "correctIndex": 1,
+      "correction": "En apprentissage par renforcement, l'agent apprend par interactions successives avec son environnement et ajuste sa stratégie en fonction des récompenses ou signaux reçus."
+    },
+    {
+      "id": "caip-intro-013",
+      "category": "Deep Learning",
+      "question": "Combien de couches minimum caractérise un réseau de neurones en apprentissage profond selon le cours ?",
+      "options": ["Une couche", "Deux couches", "Trois couches ou plus", "Exactement dix couches"],
+      "correctIndex": 2,
+      "correction": "Selon le cours, un réseau de neurones associé à l'apprentissage profond comporte trois couches ou plus."
+    },
+    {
+      "id": "caip-intro-014",
+      "category": "Deep Learning",
+      "question": "Comment un réseau de neurones « apprend »-il ?",
+      "options": ["En comparant la sortie obtenue à la sortie attendue puis en ajustant les poids à partir de l'erreur", "En ajoutant automatiquement de nouvelles données sans calcul d'erreur", "En remplaçant toutes les fonctions d'activation par des règles symboliques", "En gardant toujours les mêmes poids pendant l'entraînement"],
+      "correctIndex": 0,
+      "correction": "Le réseau compare sa sortie à la sortie attendue et utilise l'erreur pour ajuster les poids de ses connexions afin d'améliorer progressivement ses prédictions."
+    },
+    {
+      "id": "caip-intro-015",
+      "category": "Deep Learning",
+      "question": "Quel élément détermine si un neurone d'une couche cachée s'active ?",
+      "options": ["Le biais seul", "La fonction d'activation", "L'étiquette de la classe", "Le taux d'apprentissage"],
+      "correctIndex": 1,
+      "correction": "La fonction d'activation transforme la combinaison des entrées du neurone et détermine sa réponse ou son niveau d'activation."
+    },
+    {
+      "id": "caip-intro-016",
+      "category": "Connaissances et données",
+      "question": "Quelle différence le cours fait-il entre information et connaissance dans le contexte de l'IA ?",
+      "options": ["L'information est ce que le système observe ; la connaissance est ce qu'il retient de ces observations sous une forme structurée et abstraite", "L'information et la connaissance sont strictement identiques", "La connaissance est uniquement une donnée brute non traitée", "L'information est toujours produite après la connaissance"],
+      "correctIndex": 0,
+      "correction": "L'information correspond à ce que le système observe, tandis que la connaissance correspond à ce qu'il en retient sous une forme structurée et abstraite. Dans ce contexte, il s'agit d'un processus technique, non cognitif."
+    },
+    {
+      "id": "caip-intro-017",
+      "category": "Connaissances et données",
+      "question": "Le calcul souple se caractérise par sa tolérance à quels éléments ?",
+      "options": ["L'imprécision, l'incertitude et la vérité partielle", "Uniquement aux erreurs de syntaxe", "Uniquement aux valeurs entières", "L'absence totale de données"],
+      "correctIndex": 0,
+      "correction": "Le calcul souple accepte l'imprécision, l'incertitude et la vérité partielle afin de produire des solutions tractables, robustes et peu coûteuses, notamment avec les systèmes flous, les algorithmes évolutionnistes et les réseaux neuronaux."
+    },
+    {
+      "id": "caip-intro-018",
+      "category": "Connaissances et données",
+      "question": "Quelle distinction entre données d'entraînement, de validation et d'essai est correcte ?",
+      "options": ["Entraînement : apprentissage du modèle ; validation : choix algorithmiques et hyperparamètres ; essai : évaluation finale sur des données distinctes", "Entraînement : évaluation finale ; validation : collecte ; essai : apprentissage du modèle", "Les trois jeux doivent toujours contenir exactement les mêmes exemples", "Le jeu d'essai sert à ajuster les hyperparamètres pendant le développement"],
+      "correctIndex": 0,
+      "correction": "Les données d'entraînement servent à apprendre le modèle, les données de validation servent aux choix de développement et aux hyperparamètres, et les données d'essai servent à mesurer les performances avant déploiement sur un jeu distinct des données de développement."
+    },
+    {
+      "id": "caip-intro-019",
+      "category": "Principes de l'IA",
+      "question": "Selon l'ISO/IEC 22989, l'intelligence artificielle générale (AGI) existe-t-elle déjà dans plusieurs applications commerciales ?",
+      "options": ["Oui, elle est déjà courante dans les assistants vocaux", "Oui, mais uniquement dans les systèmes experts", "Non, l'AGI reste théorique tandis que les applications actuelles relèvent de l'IA étroite", "Non, car aucune forme d'IA n'existe encore"],
+      "correctIndex": 2,
+      "correction": "L'affirmation est fausse : dans le cadre présenté, l'AGI reste théorique et les systèmes disponibles aujourd'hui sont des systèmes d'IA étroite spécialisés dans des tâches ou domaines déterminés."
+    },
+    {
+      "id": "caip-intro-020",
+      "category": "Principes de l'IA",
+      "question": "Lequel de ces exemples correspond le mieux à une IA étroite ?",
+      "options": ["Un système spécialisé dans la détection d'objets sur des images", "Un système possédant une intelligence générale comparable à celle d'un humain dans tous les domaines", "Une machine capable d'apprendre n'importe quelle tâche intellectuelle sans limite de domaine", "Une AGI autonome maîtrisant spontanément toutes les disciplines"],
+      "correctIndex": 0,
+      "correction": "Une IA étroite est conçue pour accomplir une tâche ou un ensemble limité de tâches. Un système spécialisé dans la détection d'objets sur des images en est un exemple typique."
+    }
+  ]
+}
