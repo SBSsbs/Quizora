@@ -1,0 +1,266 @@
+{
+  "title": "Quiz 01 : Les fondamentaux de l’IA",
+  "description": "20 questions sur la définition et les usages de l’IA, les repères historiques, les conditions de déploiement, les types d’IA et les approches symbolique et connexionniste.",
+  "questions": [
+    {
+      "id": "inar-fondamentaux-001",
+      "category": "Définition et usages de l’IA",
+      "question": "Quelle définition correspond le mieux à l’intelligence artificielle présentée dans la formation ?",
+      "options": [
+        "Un équipement qui remplace systématiquement les humains",
+        "Un logiciel capable d’imiter certaines capacités humaines",
+        "Une base de données qui conserve des informations",
+        "Un programme qui fournit toujours une réponse exacte"
+      ],
+      "correctIndex": 1,
+      "correction": "La formation présente l’IA comme un logiciel qui imite certaines capacités humaines, telles que reconnaître des formes, interpréter des images ou traiter le langage. Elle peut également exploiter des données pour prédire un résultat et extraire des informations. Cette définition englobe plusieurs capacités, au-delà de la seule conversation."
+    },
+    {
+      "id": "inar-fondamentaux-002",
+      "category": "Définition et usages de l’IA",
+      "question": "Quelle capacité de l’IA permet de repérer une transaction inhabituelle dans un ensemble d’opérations ?",
+      "options": [
+        "La génération d’images",
+        "La traduction automatique",
+        "La détection d’anomalies",
+        "La synthèse vocale"
+      ],
+      "correctIndex": 2,
+      "correction": "La détection d’anomalies consiste à repérer un événement qui se distingue du fonctionnement habituel. Les notes citent notamment une transaction suspecte ou une dérive de production. Le résultat peut contribuer à une alerte ou à une aide à la décision."
+    },
+    {
+      "id": "inar-fondamentaux-003",
+      "category": "Définition et usages de l’IA",
+      "question": "Quelles capacités un assistant vocal mobilise-t-il lorsqu’un utilisateur lui demande la météo ?",
+      "options": [
+        "Reconnaître la voix, interpréter la demande et produire une réponse",
+        "Stocker uniquement un enregistrement sonore",
+        "Générer systématiquement une image",
+        "Appliquer uniquement une prévision financière"
+      ],
+      "correctIndex": 0,
+      "correction": "L’exemple de l’assistant vocal montre qu’un même usage peut combiner plusieurs capacités. Le système traite la parole de l’utilisateur, interprète sa demande, puis fournit une réponse adaptée. Les notes utilisent cet exemple pour montrer que l’IA intervient déjà dans des outils du quotidien."
+    },
+    {
+      "id": "inar-fondamentaux-004",
+      "category": "Définition et usages de l’IA",
+      "question": "Quelle association entre un besoin et un usage de l’IA est correcte ?",
+      "options": [
+        "Anticiper une panne : génération de musique",
+        "Traduire un texte : maintenance prédictive",
+        "Répondre à une demande client : stockage de fichiers uniquement",
+        "Anticiper une panne : maintenance prédictive"
+      ],
+      "correctIndex": 3,
+      "correction": "La maintenance prédictive figure parmi les applications présentées dans la formation. Elle illustre l’utilisation de l’IA pour anticiper un problème plutôt que d’attendre sa survenue. La section présente également les assistants conversationnels et le service client comme d’autres domaines d’application."
+    },
+    {
+      "id": "inar-fondamentaux-005",
+      "category": "Repères historiques",
+      "question": "Quel événement de 1956 marque la naissance officielle de l’IA dans la chronologie présentée ?",
+      "options": [
+        "Le lancement de ChatGPT",
+        "La conférence de Dartmouth",
+        "L’apparition du Transformer",
+        "La présentation d’AlexNet"
+      ],
+      "correctIndex": 1,
+      "correction": "La chronologie situe la naissance officielle de l’IA à la conférence de Dartmouth en 1956. Les chercheurs explorent alors la possibilité de reproduire certaines formes d’intelligence avec une machine. Les ambitions sont importantes, mais les moyens informatiques restent très limités."
+    },
+    {
+      "id": "inar-fondamentaux-006",
+      "category": "Repères historiques",
+      "question": "Quels obstacles ont freiné les premiers développements de l’IA ?",
+      "options": [
+        "Une puissance de calcul limitée, peu de données et des algorithmes encore insuffisants",
+        "Un excès de puissance de calcul et de données",
+        "L’absence de toute idée concernant l’intelligence artificielle",
+        "La disponibilité trop précoce d’assistants conversationnels grand public"
+      ],
+      "correctIndex": 0,
+      "correction": "La formation souligne l’écart entre les promesses initiales et les moyens disponibles. Les ordinateurs manquent de puissance, les données numériques sont peu nombreuses et les algorithmes rencontrent des limites. Ces difficultés empêchent les premiers systèmes de tenir toutes les attentes suscitées."
+    },
+    {
+      "id": "inar-fondamentaux-007",
+      "category": "Repères historiques",
+      "question": "Quelle difficulté caractérise les systèmes experts présentés dans l’historique ?",
+      "options": [
+        "Ils nécessitent obligatoirement une conversation vocale",
+        "Ils génèrent uniquement des images",
+        "Il faut écrire et maintenir un grand nombre de règles",
+        "Ils apprennent toujours seuls, sans connaissances explicites"
+      ],
+      "correctIndex": 2,
+      "correction": "Les systèmes experts exploitent des connaissances humaines sous forme de règles, souvent exprimées par « SI… ALORS… ». Leur développement demande de formaliser ces connaissances, puis de faire évoluer les règles lorsque les situations ou les procédures changent. Les notes utilisent cette limite pour introduire l’apprentissage à partir d’exemples."
+    },
+    {
+      "id": "inar-fondamentaux-008",
+      "category": "Repères historiques",
+      "question": "Quel jalon la formation associe-t-elle à l’année 2012 ?",
+      "options": [
+        "La conférence de Dartmouth",
+        "Le lancement de ChatGPT",
+        "L’apparition des premiers systèmes experts",
+        "Le succès d’AlexNet sur ImageNet et l’essor du Deep Learning"
+      ],
+      "correctIndex": 3,
+      "correction": "La formation présente AlexNet et ImageNet comme un tournant important pour le Deep Learning en reconnaissance d’images. Elle souligne le rôle conjoint des réseaux de neurones, des grandes quantités de données et des GPU. Le progrès résulte de leur combinaison, plutôt que de l’apparition soudaine d’une idée entièrement nouvelle."
+    },
+    {
+      "id": "inar-fondamentaux-009",
+      "category": "Repères historiques",
+      "question": "Quelle architecture, située en 2017 dans la chronologie, constitue une brique importante des grands modèles de langage ?",
+      "options": [
+        "Le Transformer",
+        "Le système expert à règles",
+        "La base de données relationnelle",
+        "Le tableur"
+      ],
+      "correctIndex": 0,
+      "correction": "La chronologie relie l’architecture Transformer au développement des grands modèles de langage. Les notes expliquent qu’elle permet de traiter les relations entre les éléments d’une séquence et de s’entraîner efficacement à grande échelle. Elle constitue ainsi une étape importante dans le développement des LLM présentés dans la formation."
+    },
+    {
+      "id": "inar-fondamentaux-010",
+      "category": "Repères historiques",
+      "question": "Pourquoi ChatGPT représente-t-il un tournant dans l’accès du grand public à l’IA ?",
+      "options": [
+        "Il marque la toute première apparition de l’IA",
+        "Il rend inutile toute infrastructure informatique",
+        "Il permet d’utiliser des capacités avancées grâce à une interface en langage naturel",
+        "Il supprime le besoin d’entraîner les modèles"
+      ],
+      "correctIndex": 2,
+      "correction": "Les notes mettent l’accent sur l’accessibilité : une simple zone de texte permet à l’utilisateur de formuler une demande. Cette facilité d’utilisation rend des capacités avancées accessibles à un public beaucoup plus large. La formation replace cette évolution dans une progression déjà engagée grâce aux données, au calcul et aux algorithmes."
+    },
+    {
+      "id": "inar-fondamentaux-011",
+      "category": "Conditions de déploiement",
+      "question": "Quels sont les trois piliers techniques du déploiement de l’IA présentés dans la formation ?",
+      "options": [
+        "Communication, publicité et réseaux sociaux",
+        "Données, infrastructure et algorithmes avec entraînement des modèles",
+        "Logo, site web et présentation commerciale",
+        "Nombre d’utilisateurs, nombre de réunions et nombre de documents"
+      ],
+      "correctIndex": 1,
+      "correction": "La slide distingue la disponibilité et la qualité des données, l’infrastructure avec sa capacité à évoluer, puis les algorithmes et l’entraînement. Ces piliers couvrent notamment la collecte des données, leur stockage et leur traitement, ainsi que les outils de développement des modèles. Préparer un projet d’IA implique de considérer cet ensemble."
+    },
+    {
+      "id": "inar-fondamentaux-012",
+      "category": "Conditions de déploiement",
+      "question": "Que faut-il faire si les données nécessaires à un projet d’IA sont incomplètes ou de mauvaise qualité ?",
+      "options": [
+        "Choisir automatiquement le modèle le plus complexe",
+        "Ignorer les données et se concentrer sur l’interface",
+        "Augmenter uniquement l’espace de stockage",
+        "Améliorer la collecte et la qualité des données avant de compter sur les résultats"
+      ],
+      "correctIndex": 3,
+      "correction": "Les notes présentent la qualité des données comme un point de départ du projet. Des informations incomplètes ou incorrectes peuvent compromettre les résultats du modèle. Une infrastructure plus puissante ou un algorithme plus sophistiqué ne suffit donc pas à résoudre ce problème de départ."
+    },
+    {
+      "id": "inar-fondamentaux-013",
+      "category": "Types d’IA et résultats attendus",
+      "question": "Que signifie le terme « faible » dans l’expression « IA faible » ?",
+      "options": [
+        "L’IA obtient nécessairement de mauvais résultats",
+        "L’IA utilise toujours très peu de données",
+        "Les capacités de l’IA concernent un périmètre d’usages délimité",
+        "L’IA fonctionne uniquement sur un ordinateur peu puissant"
+      ],
+      "correctIndex": 2,
+      "correction": "La distinction présentée porte sur l’étendue des capacités. Une IA dite faible peut être très performante dans son périmètre, par exemple pour la traduction ou la détection de fraude. Le mot « faible » ne constitue donc pas une évaluation de la qualité de ses résultats."
+    },
+    {
+      "id": "inar-fondamentaux-014",
+      "category": "Types d’IA et résultats attendus",
+      "question": "Quelle caractéristique décrit l’IA forte, appelée AGI dans cette formation ?",
+      "options": [
+        "Une capacité d’adaptation à de nombreux domaines et à des tâches intellectuelles variées",
+        "La reconnaissance d’un seul type d’image",
+        "L’application d’une règle fixe dans une seule situation",
+        "La production exclusive de textes publicitaires"
+      ],
+      "correctIndex": 0,
+      "correction": "Dans le vocabulaire employé par la formation, l’IA forte désigne une intelligence générale, capable de s’adapter à des situations nouvelles et d’accomplir des tâches intellectuelles variées. La distinction porte sur la polyvalence et la capacité d’adaptation. Une performance élevée sur une tâche particulière ne suffit pas, à elle seule, à démontrer ces capacités générales."
+    },
+    {
+      "id": "inar-fondamentaux-015",
+      "category": "Types d’IA et résultats attendus",
+      "question": "Un système estime les ventes du mois prochain à partir de données historiques. Quel type de résultat produit-il ?",
+      "options": [
+        "Une génération d’image",
+        "Une prédiction",
+        "Une règle symbolique écrite par un expert",
+        "Une preuve d’intelligence générale"
+      ],
+      "correctIndex": 1,
+      "correction": "L’IA prédictive utilise les données pour estimer une valeur, une catégorie ou une probabilité. Dans cet exemple, le résultat attendu est une estimation des ventes. Les notes mentionnent également le scoring de risque et la segmentation client comme illustrations de cette famille d’usages."
+    },
+    {
+      "id": "inar-fondamentaux-016",
+      "category": "Types d’IA et résultats attendus",
+      "question": "Quelle proposition décrit correctement les productions possibles de l’IA générative ?",
+      "options": [
+        "Uniquement des scores numériques",
+        "Uniquement des classifications d’images existantes",
+        "Uniquement du texte",
+        "Du texte, des images, du code, de l’audio ou de la vidéo"
+      ],
+      "correctIndex": 3,
+      "correction": "L’IA générative produit un nouveau contenu à partir d’une demande et de son contexte. La formation présente plusieurs modalités, notamment le texte, l’image et le code, ainsi que l’audio et la vidéo. Les notes rappellent aussi que la production doit faire l’objet d’une vérification de sa pertinence et de sa qualité."
+    },
+    {
+      "id": "inar-fondamentaux-017",
+      "category": "Types d’IA et résultats attendus",
+      "question": "Quel scénario illustre une approche hybride décrite dans les notes de la formation ?",
+      "options": [
+        "Un modèle extrait les informations d’une facture, puis des règles métier contrôlent les montants",
+        "Un fichier reste stocké sans traitement",
+        "Un utilisateur recopie manuellement un document",
+        "Un programme affiche toujours le même message"
+      ],
+      "correctIndex": 0,
+      "correction": "Dans cet exemple fictif, le modèle appris reconnaît les informations du document, tandis que les règles explicites vérifient certaines contraintes métier. Le système associe donc des capacités complémentaires. Les notes précisent qu’un humain examine les cas problématiques et qu’il faut tester l’ensemble du processus, car une erreur peut se transmettre d’une étape à l’autre."
+    },
+    {
+      "id": "inar-fondamentaux-018",
+      "category": "Approches symbolique et connexionniste",
+      "question": "Un système oriente une demande vers le support matériel en appliquant une règle explicite concernant les imprimantes. Quelle approche illustre-t-il ?",
+      "options": [
+        "Une génération de contenu",
+        "Une intelligence générale",
+        "Une approche symbolique",
+        "Un réseau de neurones entraîné sur des images"
+      ],
+      "correctIndex": 2,
+      "correction": "L’approche symbolique représente les connaissances au moyen de faits, de concepts et de règles explicites. Le système applique ces règles pour tirer une conclusion, ici l’équipe à contacter. Un avantage est de pouvoir examiner la règle utilisée, mais il faut maintenir la base de connaissances lorsque les équipements ou les procédures évoluent."
+    },
+    {
+      "id": "inar-fondamentaux-019",
+      "category": "Approches symbolique et connexionniste",
+      "question": "Comment un système connexionniste apprend-il à classer des images ?",
+      "options": [
+        "En mémorisant uniquement une liste de règles rédigées à la main",
+        "En ajustant les paramètres d’un réseau de neurones à partir d’exemples",
+        "En demandant systématiquement la réponse à un utilisateur",
+        "En appliquant une règle identique sans entraînement"
+      ],
+      "correctIndex": 1,
+      "correction": "Pendant l’entraînement, le réseau ajuste les paramètres de ses connexions pour repérer des régularités dans les données. Il peut ensuite proposer une catégorie pour une nouvelle image. Les notes insistent sur la nécessité de le tester avec des images non utilisées pendant l’apprentissage, notamment lorsque l’éclairage ou la netteté changent."
+    },
+    {
+      "id": "inar-fondamentaux-020",
+      "category": "Approches symbolique et connexionniste",
+      "question": "Quelle affirmation décrit correctement le lien entre « connexionniste » et « génératif » ?",
+      "options": [
+        "Tous les réseaux de neurones produisent obligatoirement du texte",
+        "Une IA symbolique et une IA prédictive désignent exactement la même chose",
+        "Un modèle génératif ne peut jamais utiliser de réseau de neurones",
+        "« Connexionniste » décrit l’approche, tandis que « génératif » décrit le type de résultat attendu"
+      ],
+      "correctIndex": 3,
+      "correction": "Les deux classements répondent à des questions différentes. Symbolique et connexionniste décrivent la manière dont le système représente les connaissances et traite le problème. Prédictif et génératif décrivent le résultat recherché : un réseau de neurones peut servir à classer une image ou à générer du contenu."
+    }
+  ]
+}

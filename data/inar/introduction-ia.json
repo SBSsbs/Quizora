@@ -1,0 +1,268 @@
+{
+  "id": "inar-introduction-ia",
+  "title": "État de l’art sur l’IA — Introduction à l’Intelligence Artificielle",
+  "description": "20 questions couvrant l’introduction à l’IA, ses familles, le Machine Learning, le Deep Learning, les LLM, la multimodalité et le RAG.",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "inar-intro-001",
+      "category": "Introduction à l’IA",
+      "question": "Quel énoncé décrit le mieux l’intelligence artificielle dans le contexte de la formation ?",
+      "options": [
+        "Uniquement des robots humanoïdes",
+        "Des systèmes capables d’accomplir des tâches associées à des capacités intelligentes, comme comprendre du langage ou reconnaître des images",
+        "Un logiciel qui remplace systématiquement toute décision humaine",
+        "Une base de données de grande taille"
+      ],
+      "correctIndex": 1,
+      "correction": "L’IA regroupe des techniques permettant à des systèmes d’exécuter des tâches telles que la compréhension du langage, la reconnaissance visuelle, la prédiction ou la génération de contenu."
+    },
+    {
+      "id": "inar-intro-002",
+      "category": "Histoire et évolution",
+      "question": "Quelle date est généralement retenue comme un jalon fondateur de l’IA en tant que domaine de recherche ?",
+      "options": [
+        "1945",
+        "1956",
+        "1997",
+        "2022"
+      ],
+      "correctIndex": 1,
+      "correction": "1956 correspond à l’atelier de Dartmouth, souvent considéré comme un jalon fondateur du domaine de l’intelligence artificielle."
+    },
+    {
+      "id": "inar-intro-003",
+      "category": "Histoire et évolution",
+      "question": "Quel ensemble de facteurs explique le mieux l’accélération récente de l’IA et des LLM ?",
+      "options": [
+        "La disparition des données numériques",
+        "La combinaison de volumes de données importants, de puissance de calcul, d’algorithmes améliorés et d’infrastructures adaptées",
+        "Le remplacement du cloud par des ordinateurs isolés",
+        "L’abandon des réseaux de neurones"
+      ],
+      "correctIndex": 1,
+      "correction": "L’essor récent repose notamment sur davantage de données, une puissance de calcul accrue, des progrès algorithmiques et des infrastructures capables d’entraîner de grands modèles."
+    },
+    {
+      "id": "inar-intro-004",
+      "category": "Concepts clés",
+      "question": "Quelle distinction décrit correctement IA faible et IA forte ?",
+      "options": [
+        "L’IA faible vise des tâches ou domaines spécifiques, tandis que l’IA forte désigne une intelligence générale comparable aux capacités humaines",
+        "L’IA faible fonctionne sans données et l’IA forte uniquement avec des données",
+        "L’IA faible est toujours open source",
+        "L’IA forte désigne simplement un modèle avec beaucoup de paramètres"
+      ],
+      "correctIndex": 0,
+      "correction": "L’IA faible, ou étroite, est spécialisée. L’IA forte renvoie à l’idée d’une intelligence générale capable de transférer largement ses capacités entre domaines."
+    },
+    {
+      "id": "inar-intro-005",
+      "category": "Concepts clés",
+      "question": "Quelle différence caractérise le mieux IA prédictive et IA générative ?",
+      "options": [
+        "L’IA prédictive produit uniquement des images",
+        "L’IA prédictive estime un résultat probable à partir de données, tandis que l’IA générative crée de nouveaux contenus",
+        "L’IA générative ne repose jamais sur l’apprentissage automatique",
+        "Il n’existe aucune différence"
+      ],
+      "correctIndex": 1,
+      "correction": "Une IA prédictive cherche par exemple à prévoir un churn ou une demande ; une IA générative produit du texte, des images, du code, de l’audio ou d’autres contenus."
+    },
+    {
+      "id": "inar-intro-006",
+      "category": "Familles d’IA",
+      "question": "Quelle approche repose principalement sur des règles explicites, des symboles et des mécanismes de raisonnement ?",
+      "options": [
+        "IA symbolique",
+        "IA connexionniste",
+        "Apprentissage par renforcement",
+        "RAG"
+      ],
+      "correctIndex": 0,
+      "correction": "L’IA symbolique représente explicitement connaissances, règles et relations afin d’effectuer des raisonnements."
+    },
+    {
+      "id": "inar-intro-007",
+      "category": "Familles d’IA",
+      "question": "Que cherche une approche hybride de l’IA ?",
+      "options": [
+        "À supprimer toute donnée d’entraînement",
+        "À combiner plusieurs approches, par exemple raisonnement symbolique et modèles connexionnistes",
+        "À utiliser uniquement des règles métier",
+        "À remplacer le Machine Learning par des tableurs"
+      ],
+      "correctIndex": 1,
+      "correction": "Une approche hybride combine des paradigmes complémentaires afin de bénéficier, selon le cas, de capacités d’apprentissage et de raisonnement explicite."
+    },
+    {
+      "id": "inar-intro-008",
+      "category": "Machine Learning",
+      "question": "Dans l’apprentissage supervisé, de quoi le modèle dispose-t-il pendant l’entraînement ?",
+      "options": [
+        "Uniquement de données sans cible",
+        "D’exemples associés à des réponses ou étiquettes attendues",
+        "Uniquement de récompenses données par un environnement",
+        "D’aucune donnée"
+      ],
+      "correctIndex": 1,
+      "correction": "En apprentissage supervisé, les exemples d’entraînement comportent une cible ou une étiquette permettant au modèle d’apprendre la relation entre entrées et sorties."
+    },
+    {
+      "id": "inar-intro-009",
+      "category": "Machine Learning",
+      "question": "Quel scénario correspond le mieux à l’apprentissage non supervisé ?",
+      "options": [
+        "Prédire un prix à partir d’exemples déjà étiquetés",
+        "Regrouper automatiquement des clients aux comportements similaires sans catégories fournies à l’avance",
+        "Apprendre à jouer par récompenses et pénalités",
+        "Corriger manuellement chaque réponse d’un chatbot"
+      ],
+      "correctIndex": 1,
+      "correction": "L’apprentissage non supervisé cherche des structures dans des données non étiquetées, par exemple des groupes de clients similaires."
+    },
+    {
+      "id": "inar-intro-010",
+      "category": "Machine Learning",
+      "question": "Quel principe caractérise l’apprentissage par renforcement ?",
+      "options": [
+        "Apprendre à partir d’interactions avec un environnement et de signaux de récompense",
+        "Utiliser obligatoirement des données tabulaires étiquetées",
+        "Appliquer uniquement des règles écrites à la main",
+        "Rechercher des documents dans une base vectorielle"
+      ],
+      "correctIndex": 0,
+      "correction": "Un agent de renforcement agit dans un environnement et ajuste sa stratégie à partir des récompenses ou pénalités reçues."
+    },
+    {
+      "id": "inar-intro-011",
+      "category": "Deep Learning",
+      "question": "Qu’est-ce qui caractérise principalement le Deep Learning ?",
+      "options": [
+        "L’utilisation de réseaux de neurones comportant plusieurs couches de représentation",
+        "L’absence totale d’entraînement",
+        "L’utilisation exclusive de règles logiques",
+        "Le stockage de documents dans un moteur de recherche"
+      ],
+      "correctIndex": 0,
+      "correction": "Le Deep Learning s’appuie sur des réseaux de neurones profonds capables d’apprendre des représentations hiérarchiques à partir des données."
+    },
+    {
+      "id": "inar-intro-012",
+      "category": "Deep Learning",
+      "question": "Quelle association architecture-usage est la plus pertinente ?",
+      "options": [
+        "CNN — traitement d’images et de structures spatiales",
+        "CNN — stockage relationnel",
+        "RNN — uniquement génération d’images fixes",
+        "Transformer — uniquement calcul de moyennes"
+      ],
+      "correctIndex": 0,
+      "correction": "Les CNN sont historiquement adaptés aux données à structure spatiale, notamment les images. Les RNN traitent des séquences et les Transformers sont devenus centraux pour de nombreux modèles de langage."
+    },
+    {
+      "id": "inar-intro-013",
+      "category": "Transformers",
+      "question": "Quel mécanisme a fortement contribué au succès des Transformers ?",
+      "options": [
+        "L’attention, qui permet de pondérer les relations entre éléments d’une séquence",
+        "La suppression de tout contexte",
+        "L’utilisation obligatoire d’un seul neurone",
+        "Le tri alphabétique des mots"
+      ],
+      "correctIndex": 0,
+      "correction": "Le mécanisme d’attention permet au modèle de considérer les relations pertinentes entre différents éléments du contexte, ce qui est central dans l’architecture Transformer."
+    },
+    {
+      "id": "inar-intro-014",
+      "category": "LLM",
+      "question": "Dans un LLM, qu’est-ce qu’un token ?",
+      "options": [
+        "Toujours un mot complet",
+        "Une unité de texte manipulée par le modèle, pouvant correspondre à un mot, une partie de mot ou un symbole",
+        "Une base de données externe",
+        "Une règle de sécurité"
+      ],
+      "correctIndex": 1,
+      "correction": "Les modèles découpent le texte en tokens. Un token n’est pas nécessairement un mot entier : il peut être un fragment de mot, un signe ou une autre unité textuelle."
+    },
+    {
+      "id": "inar-intro-015",
+      "category": "LLM",
+      "question": "À quoi correspond la fenêtre de contexte d’un LLM ?",
+      "options": [
+        "Au nombre maximal approximatif de tokens que le modèle peut prendre en compte dans une interaction donnée",
+        "Au nombre d’utilisateurs autorisés",
+        "Au nombre de GPU dans le datacenter",
+        "Au nombre de langues parlées par le formateur"
+      ],
+      "correctIndex": 0,
+      "correction": "La fenêtre de contexte détermine la quantité de tokens que le modèle peut considérer ensemble pour produire sa réponse."
+    },
+    {
+      "id": "inar-intro-016",
+      "category": "Entraînement et adaptation",
+      "question": "Que signifie entraîner un modèle de Machine Learning ?",
+      "options": [
+        "Lui fournir seulement un nom commercial",
+        "Ajuster ses paramètres à partir de données et d’un objectif d’apprentissage afin d’améliorer ses prédictions ou productions",
+        "Copier les réponses d’un moteur de recherche",
+        "Installer une application sur un poste utilisateur"
+      ],
+      "correctIndex": 1,
+      "correction": "L’entraînement consiste à optimiser les paramètres du modèle à partir de données selon une fonction objectif. Pour les grands modèles, ce travail mobilise généralement des équipes spécialisées et une infrastructure de calcul importante."
+    },
+    {
+      "id": "inar-intro-017",
+      "category": "Entraînement et adaptation",
+      "question": "Quel est le rôle principal du fine-tuning ?",
+      "options": [
+        "Réentraîner systématiquement un modèle depuis zéro",
+        "Adapter davantage un modèle préentraîné à une tâche, un domaine ou un comportement ciblé à l’aide de données supplémentaires",
+        "Augmenter la vitesse d’Internet",
+        "Transformer un PDF en image"
+      ],
+      "correctIndex": 1,
+      "correction": "Le fine-tuning part d’un modèle préentraîné et poursuit son adaptation avec des données ciblées ; il se distingue d’un entraînement complet depuis zéro."
+    },
+    {
+      "id": "inar-intro-018",
+      "category": "Multimodalité",
+      "question": "Qu’est-ce qu’un modèle multimodal ?",
+      "options": [
+        "Un modèle limité au texte français",
+        "Un modèle capable de traiter ou produire plusieurs modalités telles que texte, image, audio ou vidéo",
+        "Un modèle qui fonctionne uniquement hors ligne",
+        "Un modèle composé de plusieurs bases SQL"
+      ],
+      "correctIndex": 1,
+      "correction": "La multimodalité consiste à travailler avec plusieurs types de contenus. Le programme cite notamment texte, image, audio et vidéo, avec des exemples comme GPT-4o et Gemini."
+    },
+    {
+      "id": "inar-intro-019",
+      "category": "RAG",
+      "question": "Quel est le principe central du RAG (Retrieval Augmented Generation) ?",
+      "options": [
+        "Supprimer la base documentaire avant de questionner le LLM",
+        "Rechercher des informations pertinentes dans une source externe puis les fournir au modèle pour l’aider à générer sa réponse",
+        "Réentraîner intégralement le LLM pour chaque question",
+        "Remplacer le LLM par un tableur"
+      ],
+      "correctIndex": 1,
+      "correction": "Le RAG associe une étape de recherche d’informations à la génération : les éléments retrouvés sont ajoutés au contexte afin d’ancrer la réponse sur une base documentaire pertinente."
+    },
+    {
+      "id": "inar-intro-020",
+      "category": "RAG",
+      "question": "Quel cas d’usage est particulièrement adapté à une architecture RAG en entreprise ?",
+      "options": [
+        "Répondre à des questions sur une documentation interne régulièrement mise à jour sans réentraîner complètement le modèle à chaque modification",
+        "Calculer uniquement la somme de deux nombres",
+        "Remplacer toutes les règles de sécurité par un prompt",
+        "Créer un modèle de fondation depuis zéro sur un ordinateur portable"
+      ],
+      "correctIndex": 0,
+      "correction": "Le RAG est pertinent lorsqu’un assistant doit s’appuyer sur une base documentaire d’entreprise actualisable, car les documents peuvent être recherchés au moment de la requête sans réentraîner entièrement le modèle."
+    }
+  ]
+}

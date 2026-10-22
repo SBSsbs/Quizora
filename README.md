@@ -26,3 +26,16 @@ Puis ouvrir :
 ## Version
 
 Application : 9.0.0
+
+
+## Version 10
+Ajout de la formation INAR « État de l’art sur l’Intelligence Artificielle » avec un quiz Introduction à l’IA de 20 questions. Les réponses et corrections restent masquées pendant le quiz et sont affichées uniquement dans le rapport final et le PDF.
+
+
+## Version 12 — Microsoft PL-300
+- Nouvelle formation « Design and manage analytics solutions using Power BI (Microsoft PL-300) ».
+- Quiz 01 : 20 questions, réponses et explications détaillées, fichier `data/pl300/fondamentaux-power-bi.json`.
+- Quiz 02 et 03 affichés « À venir » et non cliquables, aucune question fictive.
+- Les quiz existants CAIP, Spark et INAR sont conservés ; correction uniquement en fin de questionnaire et rapport PDF.
+- Liens : `?formation=pl300` et `?quiz=pl300-quiz-01`.
+- Déploiement Azure Static Web Apps : racine `/`, aucun build nécessaire.

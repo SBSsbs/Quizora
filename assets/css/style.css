@@ -436,3 +436,6 @@ input:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(37, 99, 2
 @media (max-width: 640px) { .theme-grid { grid-template-columns: 1fr; } }
 
 .quiz-info { margin: 14px 0 0; padding: 12px 14px; border-radius: 12px; background: #f7f9fd; color: var(--muted); font-size: .93rem; line-height: 1.5; border: 1px solid #e7ecf5; }
+
+/* Quiz PL-300 à venir : non cliquables */
+.quiz-coming-soon { opacity: .65; cursor: default; }

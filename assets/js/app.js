@@ -1,8 +1,11 @@
-const APP_VERSION = "9.0.0";
+const APP_VERSION = "12.0.0";
 const catalog = {
   "caip-quiz-complet-1": "data/caip/quiz-complet-1.json",
   "caip-quiz-complet-2": "data/caip/quiz-complet-2.json",
-  "spark-general": "data/spark/questions.json"
+  "spark-general": "data/spark/questions.json",
+  "inar-introduction-ia": "data/inar/introduction-ia.json",
+  "inar-fondamentaux-ia": "data/inar/fondamentaux-ia.json",
+  "pl300-quiz-01": "data/pl300/fondamentaux-power-bi.json"
 };
 
 // Compatibilité avec les anciens liens partagés.
@@ -32,6 +35,41 @@ const formations = {
         kicker: "Quiz complet 2 • 40 questions",
         title: "CAIP — Évaluation complète 2",
         description: "Deuxième série complète et complémentaire couvrant les mêmes grands domaines de compétence du programme CAIP."
+      }
+    ]
+  },
+  pl300: {
+    kicker: "Microsoft Power BI • PL-300",
+    title: "Design and manage analytics solutions using Power BI (Microsoft PL-300)",
+    description: "Parcours de trois quiz : préparation des données, modélisation et visualisation, puis gestion des solutions analytiques.",
+    className: "pl300",
+    image: "assets/images/formations/powerbi.svg",
+    imageAlt: "Illustration Power BI",
+    quizzes: [
+      { id: "pl300-quiz-01", kicker: "Quiz 01 • 20 questions", title: "Quiz 01 : Fondamentaux de Power BI et préparation des données", description: "Rôles, outils, Microsoft Fabric, Importation, DirectQuery, Power Query et transformations." },
+      { id: null, kicker: "Quiz 02 • À venir", title: "Quiz 02 : Modélisation et visualisation", description: "Questions à intégrer ultérieurement." },
+      { id: null, kicker: "Quiz 03 • À venir", title: "Quiz 03 : Gestion et déploiement", description: "Questions à intégrer ultérieurement." }
+    ]
+  },
+  inar: {
+    kicker: "Intelligence artificielle — État de l’art",
+    title: "État de l’art sur l’Intelligence Artificielle (IA) : concepts, enjeux, technologies et stratégies pour les entreprises",
+    description: "Quiz de 20 questions consacré à l’introduction à l’IA : concepts, familles, Machine Learning, Deep Learning, LLM, multimodalité et RAG.",
+    className: "inar",
+    image: "assets/images/formations/inar.svg",
+    imageAlt: "Illustration Intelligence artificielle",
+    quizzes: [
+      {
+        id: "inar-fondamentaux-ia",
+        kicker: "Quiz 01 • 20 questions",
+        title: "Quiz 01 : Les fondamentaux de l’IA",
+        description: "Définitions, usages, histoire, types d’IA et approches symbolique, connexionniste et hybride."
+      },
+      {
+        id: "inar-introduction-ia",
+        kicker: "Introduction à l’IA • 20 questions",
+        title: "Introduction à l’Intelligence Artificielle",
+        description: "Des origines de l’IA aux LLM : IA faible et forte, familles d’IA, Machine Learning, Deep Learning, Transformers, entraînement, multimodalité et RAG."
       }
     ]
   },
@@ -147,7 +185,7 @@ function showFormationPicker() {
         <span class="training-kicker">${escapeHtml(meta.kicker)}</span>
         <h2 class="training-title">${escapeHtml(meta.title)}</h2>
         <span class="training-description">${escapeHtml(meta.description)}</span>
-        <span class="quiz-count">${meta.quizzes.length} ${meta.quizzes.length > 1 ? "quiz disponibles" : "quiz disponible"}</span>
+        <span class="quiz-count">${meta.quizzes.filter(q => q.id).length} ${meta.quizzes.filter(q => q.id).length > 1 ? "quiz disponible(s)" : "quiz disponible"}${meta.quizzes.some(q => !q.id) ? " • autres quiz à venir" : ""}</span>
       </span>
       <span class="training-arrow" aria-hidden="true">→</span>
     </a>
@@ -159,22 +197,22 @@ function showFormationPicker() {
 function showQuizPicker(formationId) {
   const formation = formations[formationId];
   $("formation-title").textContent = formation.title;
-  $("formation-description").textContent = `${formation.quizzes.length} quiz disponibles — choisissez celui que vous souhaitez lancer.`;
+  $("formation-description").textContent = `${formation.quizzes.filter(q => q.id).length} quiz disponible(s) sur ${formation.quizzes.length} — les autres seront ajoutés prochainement.`;
   $("participant-form").classList.add("hidden");
 
   const picker = $("formation-picker");
   picker.innerHTML = `
     <a class="back-link" href="${window.location.pathname}">← Toutes les formations</a>
     ${formation.quizzes.map((quiz, index) => `
-      <a class="quiz-choice-card ${formation.className}" href="?quiz=${encodeURIComponent(quiz.id)}">
+      <${quiz.id ? "a" : "div"} class="quiz-choice-card ${formation.className} ${quiz.id ? "" : "quiz-coming-soon"}" ${quiz.id ? `href="?quiz=${encodeURIComponent(quiz.id)}"` : `aria-disabled="true"`}>
         <span class="quiz-number">${String(index + 1).padStart(2, "0")}</span>
         <span class="training-content">
           <span class="training-kicker">${escapeHtml(quiz.kicker)}</span>
           <h2 class="training-title">${escapeHtml(quiz.title)}</h2>
           <span class="training-description">${escapeHtml(quiz.description)}</span>
         </span>
-        <span class="training-arrow" aria-hidden="true">→</span>
-      </a>
+        <span class="training-arrow" aria-hidden="true">${quiz.id ? "→" : "Bientôt"}</span>
+      </${quiz.id ? "a" : "div"}>
     `).join("")}
   `;
   picker.classList.remove("hidden");

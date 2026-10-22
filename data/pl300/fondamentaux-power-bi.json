@@ -1,0 +1,266 @@
+{
+  "title": "Quiz 01 : Fondamentaux de Power BI et préparation des données",
+  "description": "Rôles, analyse, Power BI Desktop et Service, Microsoft Fabric, connexion aux sources, Power Query et transformations.",
+  "questions": [
+    {
+      "id": "pl300-fondamentaux-001",
+      "category": "Fondamentaux de Power BI",
+      "question": "Quel rôle est principalement responsable de la création des pipelines qui collectent et transforment les données ?",
+      "options": [
+        "L’analyste d’entreprise",
+        "L’ingénieur données",
+        "Le décideur métier",
+        "Le concepteur de rapports"
+      ],
+      "correctIndex": 1,
+      "correction": "L’ingénieur données construit les pipelines qui récupèrent, déplacent et transforment les données provenant de différentes sources. L’analyste de données exploite ensuite ces données pour produire des analyses et des rapports, tandis que l’analyste d’entreprise se concentre sur les besoins métier. 1"
+    },
+    {
+      "id": "pl300-fondamentaux-002",
+      "category": "Fondamentaux de Power BI",
+      "question": "Quelle proposition correspond aux cinq grandes tâches d’un analyste de données ?",
+      "options": [
+        "Collecter, programmer, tester, déployer et archiver",
+        "Importer, exporter, sauvegarder, imprimer et partager",
+        "Préparer, modéliser, visualiser, analyser et gérer",
+        "Concevoir, développer, vendre, maintenir et documenter"
+      ],
+      "correctIndex": 2,
+      "correction": "La préparation rend les données exploitables. La modélisation définit les relations et les calculs. La visualisation présente les informations, puis l’analyse permet de les interpréter. Enfin, la gestion couvre notamment le partage, la distribution et la sécurité des contenus Power BI. Les autres propositions ne décrivent pas ce parcours complet. 2"
+    },
+    {
+      "id": "pl300-fondamentaux-003",
+      "category": "Fondamentaux de Power BI",
+      "question": "Quel type d’analyse cherche à expliquer pourquoi un résultat s’est produit ?",
+      "options": [
+        "L’analyse diagnostique",
+        "L’analyse descriptive",
+        "L’analyse prédictive",
+        "L’analyse prescriptive"
+      ],
+      "correctIndex": 0,
+      "correction": "L’analyse diagnostique recherche les causes d’un résultat observé. L’analyse descriptive décrit ce qui s’est passé, la prédictive estime ce qui pourrait se produire et la prescriptive aide à déterminer les décisions à prendre. 3"
+    },
+    {
+      "id": "pl300-fondamentaux-004",
+      "category": "Fondamentaux de Power BI",
+      "question": "Quelle répartition des usages de Power BI est correcte ?",
+      "options": [
+        "Desktop pour consulter uniquement, Mobile pour modéliser",
+        "Le service pour transformer uniquement, Desktop pour partager uniquement",
+        "Mobile pour créer les relations, Desktop pour administrer les licences",
+        "Desktop pour créer les rapports, le service pour les distribuer, Mobile pour les consulter"
+      ],
+      "correctIndex": 3,
+      "correction": "Power BI Desktop permet de connecter, transformer et modéliser les données, puis de concevoir les rapports. Le service Power BI permet notamment de publier, partager et gérer les contenus. L’application Mobile permet de consulter les rapports et tableaux de bord et d’interagir avec eux. 4"
+    },
+    {
+      "id": "pl300-fondamentaux-005",
+      "category": "Fondamentaux de Power BI",
+      "question": "Que contient un modèle sémantique Power BI ?",
+      "options": [
+        "Uniquement les graphiques et les couleurs du rapport",
+        "Les données, les transformations, les relations et les calculs",
+        "Uniquement les paramètres de partage",
+        "Des captures d’écran des sources de données"
+      ],
+      "correctIndex": 1,
+      "correction": "Le modèle sémantique constitue la base de données organisée sur laquelle les rapports s’appuient. Il définit notamment comment les tables sont liées et quels calculs sont disponibles. Les graphiques représentent les données de ce modèle, mais ne constituent pas le modèle lui-même. 5"
+    },
+    {
+      "id": "pl300-fondamentaux-006",
+      "category": "Fondamentaux de Power BI",
+      "question": "Quel est l’un des principaux avantages de Microsoft Fabric et de OneLake ?",
+      "options": [
+        "Créer une copie indépendante des données pour chaque équipe",
+        "Remplacer tous les professionnels des données par un outil unique",
+        "Fournir un environnement intégré qui facilite la collaboration et limite les duplications",
+        "Empêcher les différentes équipes d’accéder aux mêmes données"
+      ],
+      "correctIndex": 2,
+      "correction": "Fabric rassemble plusieurs expériences analytiques dans un environnement unifié. OneLake fournit un lac logique commun permettant aux équipes de travailler sur les données sans multiplier inutilement leurs copies. L’objectif est de faciliter la collaboration entre les rôles, et non de les remplacer ou de les isoler. 67 ## Partie 2 — Connexion, stockage et profilage"
+    },
+    {
+      "id": "pl300-fondamentaux-007",
+      "category": "Connexion, stockage et profilage",
+      "question": "Quelle affirmation décrit correctement la combinaison de sources dans Power BI ?",
+      "options": [
+        "Plusieurs sources peuvent alimenter un même modèle, avec Power Query pour préparer les données",
+        "Un modèle ne peut contenir que des données provenant d’une seule source",
+        "Les données Excel et SQL Server doivent obligatoirement rester dans des rapports séparés",
+        "Importer des données modifie automatiquement les fichiers et bases sources"
+      ],
+      "correctIndex": 0,
+      "correction": "Un modèle Power BI peut réunir, par exemple, des données SQL Server, Excel et SharePoint. Power Query permet de les connecter et de les préparer. Lors d’une importation, les transformations réalisées dans Power BI ne modifient pas directement les données d’origine. 8"
+    },
+    {
+      "id": "pl300-fondamentaux-008",
+      "category": "Connexion, stockage et profilage",
+      "question": "Quelle différence entre Importation et DirectQuery est correcte ?",
+      "options": [
+        "DirectQuery copie systématiquement toutes les données dans le modèle",
+        "Importation interroge la source à chaque interaction avec un visuel",
+        "Les deux modes offrent exactement les mêmes possibilités et performances",
+        "Importation conserve une copie des données, tandis que DirectQuery interroge la source pour alimenter les visuels"
+      ],
+      "correctIndex": 3,
+      "correction": "En mode Importation, il faut actualiser le modèle pour récupérer les changements de la source. En DirectQuery, les visuels s’appuient sur des requêtes vers la source, ce qui rend leurs performances davantage dépendantes de celle-ci. Les deux modes n’offrent donc pas exactement les mêmes contraintes ni les mêmes possibilités de transformation. 910"
+    },
+    {
+      "id": "pl300-fondamentaux-009",
+      "category": "Connexion, stockage et profilage",
+      "question": "Pourquoi un rapport DirectQuery peut-il ralentir lorsque beaucoup d’utilisateurs le consultent ?",
+      "options": [
+        "Power BI supprime temporairement les relations entre les tables",
+        "Chaque utilisateur provoque automatiquement une importation complète",
+        "Les visuels multiplient les requêtes et augmentent la charge sur la source",
+        "DirectQuery limite tous les rapports à un seul utilisateur"
+      ],
+      "correctIndex": 2,
+      "correction": "Chaque visuel peut générer une ou plusieurs requêtes. Lorsque plusieurs personnes consultent simultanément un rapport, la charge sur la source augmente. Les ressources du serveur, les autres traitements et la latence réseau influencent également les temps de réponse. Ce ralentissement ne provient pas d’une importation complète pour chaque utilisateur. 11"
+    },
+    {
+      "id": "pl300-fondamentaux-010",
+      "category": "Connexion, stockage et profilage",
+      "question": "Sur combien de lignes le profilage des données dans Power Query porte-t-il par défaut ?",
+      "options": [
+        "100 lignes",
+        "1 000 lignes",
+        "10 000 lignes",
+        "Toutes les lignes"
+      ],
+      "correctIndex": 1,
+      "correction": "Par défaut, le profilage dans Power Query s’appuie sur les 1 000 premières lignes. Les statistiques observées concernent donc cet échantillon et ne garantissent pas que toutes les lignes du jeu de données présentent les mêmes caractéristiques. 12"
+    },
+    {
+      "id": "pl300-fondamentaux-011",
+      "category": "Connexion, stockage et profilage",
+      "question": "Dans la liste `A, A, B, C, C`, combien compte-t-on de valeurs distinctes et de valeurs uniques, au sens de Power Query ?",
+      "options": [
+        "5 valeurs distinctes et 3 valeurs uniques",
+        "3 valeurs distinctes et 3 valeurs uniques",
+        "1 valeur distincte et 5 valeurs uniques",
+        "3 valeurs distinctes et 1 valeur unique"
+      ],
+      "correctIndex": 3,
+      "correction": "Une valeur distincte est une valeur différente des autres. Une valeur unique, dans les statistiques de Power Query, est une valeur qui apparaît une seule fois. 13"
+    },
+    {
+      "id": "pl300-fondamentaux-012",
+      "category": "Connexion, stockage et profilage",
+      "question": "Une importation renvoie l’erreur « Fichier introuvable ». Que faut-il vérifier en priorité ?",
+      "options": [
+        "L’emplacement du fichier et les autorisations d’accès",
+        "Les couleurs du rapport",
+        "Le nombre de mesures DAX",
+        "L’ordre des pages du rapport"
+      ],
+      "correctIndex": 0,
+      "correction": "Le fichier peut avoir été déplacé, ou les autorisations peuvent avoir changé. Il faut donc vérifier que Power BI utilise toujours le bon emplacement et dispose des droits nécessaires. Les couleurs du rapport, les mesures DAX et l’ordre des pages ne résolvent pas ce problème d’accès à la source. 14 ## Partie 3 — Nettoyage et transformation"
+    },
+    {
+      "id": "pl300-fondamentaux-013",
+      "category": "Nettoyage et transformation",
+      "question": "Que deviennent les transformations enregistrées dans les « Étapes appliquées » de Power Query ?",
+      "options": [
+        "Elles disparaissent dès que l’éditeur se ferme",
+        "Elles doivent être reproduites manuellement à chaque actualisation",
+        "Elles s’exécutent à nouveau lorsque la requête s’actualise",
+        "Elles modifient obligatoirement les données dans la source"
+      ],
+      "correctIndex": 2,
+      "correction": "Power Query enregistre les transformations dans leur ordre d’exécution. Lors d’une actualisation, il reprend cette suite d’étapes pour préparer les données à nouveau. Il n’est donc pas nécessaire de refaire manuellement le nettoyage à chaque chargement. 15"
+    },
+    {
+      "id": "pl300-fondamentaux-014",
+      "category": "Nettoyage et transformation",
+      "question": "Après avoir supprimé les lignes introductives inutiles d’un fichier, la première ligne contient les noms des colonnes. Quelle opération effectuer ?",
+      "options": [
+        "Supprimer cette première ligne",
+        "Utiliser la première ligne pour les en-têtes",
+        "Fusionner toutes les colonnes",
+        "Remplacer tous les noms par des nombres"
+      ],
+      "correctIndex": 1,
+      "correction": "Lorsque la première ligne contient les noms attendus des colonnes, cette opération transforme ses valeurs en en-têtes. Il faut auparavant supprimer les éventuelles lignes introductives inutiles pour que la bonne ligne se trouve en première position. Supprimer cette ligne ferait perdre les noms souhaités. 16"
+    },
+    {
+      "id": "pl300-fondamentaux-015",
+      "category": "Nettoyage et transformation",
+      "question": "Pourquoi vérifier les types de données avant le chargement dans le modèle ?",
+      "options": [
+        "Pour empêcher toute actualisation ultérieure",
+        "Pour convertir systématiquement toutes les colonnes en texte",
+        "Pour supprimer automatiquement toutes les valeurs Null",
+        "Pour éviter des problèmes de calcul, de relations et de performances"
+      ],
+      "correctIndex": 3,
+      "correction": "Le type détermine les opérations possibles sur une colonne. Une date interprétée comme du texte peut notamment empêcher certains calculs temporels. Le cours recommande de vérifier et de corriger les types dans Power Query avant de charger les données dans le modèle. Cette vérification ne supprime pas automatiquement les valeurs Null. 17"
+    },
+    {
+      "id": "pl300-fondamentaux-016",
+      "category": "Nettoyage et transformation",
+      "question": "Deux requêtes comportent les mêmes colonnes et contiennent respectivement 300 et 100 lignes. Quel résultat obtient-on avec « Ajouter des requêtes » ?",
+      "options": [
+        "400 lignes, sans suppression automatique des doublons",
+        "300 lignes, car Power Query conserve uniquement la plus grande table",
+        "100 lignes, car seules les correspondances sont conservées",
+        "400 lignes au maximum, après suppression automatique des doublons"
+      ],
+      "correctIndex": 0,
+      "correction": "L’opération Ajouter des requêtes, ou Append, empile les lignes des deux tables. On obtient donc 300 + 100 = 400 lignes. Même si certaines lignes sont identiques, elles restent présentes tant qu’aucune étape distincte ne supprime les doublons. 18"
+    },
+    {
+      "id": "pl300-fondamentaux-017",
+      "category": "Nettoyage et transformation",
+      "question": "Vous voulez enrichir une table de ventes avec les informations clients, en conservant toutes les ventes. Quelle opération choisir ?",
+      "options": [
+        "Ajouter les clients sous les lignes de ventes",
+        "Fusionner avec une jointure interne uniquement",
+        "Fusionner avec une jointure externe gauche, en plaçant les ventes comme première table",
+        "Supprimer les ventes qui n’ont pas de client correspondant"
+      ],
+      "correctIndex": 2,
+      "correction": "La jointure externe gauche conserve toutes les lignes de la première table, ici les ventes, et récupère les informations correspondantes dans la table clients. Une jointure interne ne conserverait que les lignes ayant une correspondance. L’opération Append ne convient pas, car elle ajoute des lignes au lieu d’enrichir les ventes avec des colonnes clients. 19"
+    },
+    {
+      "id": "pl300-fondamentaux-018",
+      "category": "Nettoyage et transformation",
+      "question": "Un tableau possède les colonnes « Produit », « Janvier », « Février » et « Mars ». Quelle opération permet d’obtenir les colonnes « Produit », « Mois » et « Montant » ?",
+      "options": [
+        "Pivoter la colonne Produit",
+        "Dépivoter les colonnes Janvier, Février et Mars",
+        "Fusionner les colonnes mensuelles en une chaîne de texte",
+        "Supprimer les colonnes mensuelles"
+      ],
+      "correctIndex": 1,
+      "correction": "Le dépivotement transforme les noms des colonnes sélectionnées en valeurs d’une colonne d’attributs, et leurs contenus en valeurs d’une autre colonne. On peut ensuite renommer ces deux colonnes Mois et Montant. Attention : les notes de la diapositive 44 inversent ponctuellement la description du dépivotement. Le corrigé ci-dessus utilise la définition correcte. 20"
+    },
+    {
+      "id": "pl300-fondamentaux-019",
+      "category": "Nettoyage et transformation",
+      "question": "Quel est le principe du Query Folding ?",
+      "options": [
+        "Exécuter systématiquement toutes les transformations sur l’ordinateur de l’utilisateur",
+        "Convertir les rapports Power BI en fichiers Excel",
+        "Supprimer les étapes de transformation après chaque actualisation",
+        "Faire exécuter par la source les transformations qu’elle peut prendre en charge"
+      ],
+      "correctIndex": 3,
+      "correction": "Le Query Folding traduit certaines transformations Power Query en opérations exécutables par la source. Cela réduit le travail à effectuer localement et peut diminuer le volume de données transférées. Il dépend des capacités de la source et des transformations utilisées, et ne consiste pas à supprimer les étapes appliquées. 21"
+    },
+    {
+      "id": "pl300-fondamentaux-020",
+      "category": "Nettoyage et transformation",
+      "question": "Quelle pratique est recommandée pour optimiser et maintenir les requêtes ?",
+      "options": [
+        "Conserver les données nécessaires, vérifier les types et utiliser des paramètres pour les valeurs réutilisables",
+        "Charger toutes les colonnes, même inutilisées",
+        "Convertir toutes les colonnes en texte et conserver le maximum de détails",
+        "Dupliquer chaque requête pour chaque visuel"
+      ],
+      "correctIndex": 0,
+      "correction": "Supprimer les données inutiles évite d’alourdir le modèle. Des types adaptés contribuent à son bon fonctionnement et à ses performances. Les paramètres centralisent des valeurs réutilisables dans les transformations. Le cours recommande également de réduire la cardinalité lorsque c’est pertinent et de désactiver le chargement des requêtes qui n’ont pas besoin de devenir des tables du modèle. 22"
+    }
+  ]
+}
