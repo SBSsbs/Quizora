@@ -1,11 +1,13 @@
-const APP_VERSION = "12.0.0";
+const APP_VERSION = "14.0.0";
 const catalog = {
   "caip-quiz-complet-1": "data/caip/quiz-complet-1.json",
   "caip-quiz-complet-2": "data/caip/quiz-complet-2.json",
   "spark-general": "data/spark/questions.json",
   "inar-introduction-ia": "data/inar/introduction-ia.json",
   "inar-fondamentaux-ia": "data/inar/fondamentaux-ia.json",
-  "pl300-quiz-01": "data/pl300/fondamentaux-power-bi.json"
+  "pl300-quiz-01": "data/pl300/fondamentaux-power-bi.json",
+  "pl300-quiz-02": "data/pl300/modelisation-dax.json",
+  "pl300-quiz-03": "data/pl300/rapports-visualisations.json"
 };
 
 // Compatibilité avec les anciens liens partagés.
@@ -47,8 +49,8 @@ const formations = {
     imageAlt: "Illustration Power BI",
     quizzes: [
       { id: "pl300-quiz-01", kicker: "Quiz 01 • 20 questions", title: "Quiz 01 : Fondamentaux de Power BI et préparation des données", description: "Rôles, outils, Microsoft Fabric, Importation, DirectQuery, Power Query et transformations." },
-      { id: null, kicker: "Quiz 02 • À venir", title: "Quiz 02 : Modélisation et visualisation", description: "Questions à intégrer ultérieurement." },
-      { id: null, kicker: "Quiz 03 • À venir", title: "Quiz 03 : Gestion et déploiement", description: "Questions à intégrer ultérieurement." }
+      { id: "pl300-quiz-02", kicker: "Quiz 02 • 20 questions", title: "Quiz 02 : Modélisation sémantique, DAX et calculs visuels", description: "Relations, paramètres, DAX, contexte de filtre, intelligence temporelle et calculs visuels." },
+      { id: "pl300-quiz-03", kicker: "Quiz 03 • 20 questions", title: "Quiz 03 : Conception des rapports, visualisations et filtres Power BI", description: "Structure des rapports, mise en page, accessibilité, choix des visualisations, filtres et segments." }
     ]
   },
   inar: {

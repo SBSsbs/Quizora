@@ -1,0 +1,266 @@
+{
+  "title": "Quiz 03 : Conception des rapports, visualisations et filtres Power BI",
+  "description": "Conception des rapports, choix des visuels, mise en page, accessibilité, filtres et segments.",
+  "questions": [
+    {
+      "id": "pl300-rapports-001",
+      "category": "Structure et conception des rapports",
+      "question": "Quelle affirmation décrit correctement la structure d’un rapport Power BI ?",
+      "options": [
+        "Il contient obligatoirement une seule page",
+        "Chaque visuel doit se connecter à un modèle sémantique différent",
+        "Il se connecte à un modèle sémantique et contient au moins une page",
+        "Il contient uniquement des graphiques, sans texte ni image"
+      ],
+      "correctIndex": 2,
+      "correction": "Un rapport se connecte à un modèle sémantique et peut comporter plusieurs pages. Chaque page contient des objets, notamment des visuels qui exploitent les données et des éléments comme des zones de texte, des images ou des boutons."
+    },
+    {
+      "id": "pl300-rapports-002",
+      "category": "Structure et conception des rapports",
+      "question": "Quelle démarche est recommandée avant de concevoir la mise en page d’un rapport ?",
+      "options": [
+        "Comprendre les besoins métier, le public et les exigences d’accessibilité",
+        "Sélectionner les graphiques les plus complexes disponibles",
+        "Remplir toute la page avant de consulter les utilisateurs",
+        "Utiliser la même disposition pour tous les rapports, quel que soit leur objectif"
+      ],
+      "correctIndex": 0,
+      "correction": "La conception doit répondre aux besoins des utilisateurs et aux informations qu’ils recherchent. Elle doit également tenir compte de l’accessibilité, notamment de la navigation au clavier et de l’utilisation d’un lecteur d’écran. Chaque élément doit avoir une utilité claire."
+    },
+    {
+      "id": "pl300-rapports-003",
+      "category": "Structure et conception des rapports",
+      "question": "Selon les recommandations du cours, où placer les éléments visuels clés pour guider l’attention ?",
+      "options": [
+        "Exclusivement en bas de page",
+        "Derrière les segments",
+        "Sans ordre particulier",
+        "Dans la partie supérieure gauche, avec une disposition alignée et structurée"
+      ],
+      "correctIndex": 3,
+      "correction": "Le cours recommande de placer les éléments importants dans le coin supérieur gauche. L’alignement, le contraste et la hiérarchie visuelle aident ensuite le lecteur à parcourir les informations dans un ordre compréhensible."
+    },
+    {
+      "id": "pl300-rapports-004",
+      "category": "Structure et conception des rapports",
+      "question": "Comment utiliser l’espacement pour rendre un rapport plus lisible ?",
+      "options": [
+        "Coller tous les visuels pour maximiser leur taille",
+        "Regrouper les visuels liés et séparer les sections par des espaces cohérents",
+        "Laisser une distance différente entre chaque objet sans règle particulière",
+        "Supprimer les marges pour remplir toute la page"
+      ],
+      "correctIndex": 1,
+      "correction": "La proximité indique que des visuels sont liés, tandis que les espaces séparent les sujets distincts. Des marges et des intervalles cohérents réduisent l’encombrement. Il faut aussi prévoir suffisamment d’espace pour éviter que les icônes des en-têtes visuels chevauchent les objets voisins."
+    },
+    {
+      "id": "pl300-rapports-005",
+      "category": "Structure et conception des rapports",
+      "question": "Quelle pratique améliore la cohérence d’un rapport ?",
+      "options": [
+        "Choisir une police différente pour chaque graphique",
+        "Faire varier les titres et les alignements sans logique commune",
+        "Harmoniser les polices, les titres, les couleurs, les tailles et les espacements",
+        "Afficher les étiquettes de données de manière aléatoire"
+      ],
+      "correctIndex": 2,
+      "correction": "La cohérence facilite la lecture et limite les distractions. Elle concerne aussi bien la typographie que les marges, les alignements et les options des visuels, comme les étiquettes d’axe ou de données."
+    },
+    {
+      "id": "pl300-rapports-006",
+      "category": "Structure et conception des rapports",
+      "question": "Quelle utilisation des couleurs est recommandée ?",
+      "options": [
+        "Utiliser une palette limitée, un contraste suffisant et des couleurs vives pour souligner les exceptions",
+        "Donner une couleur vive différente à chaque valeur",
+        "Privilégier des textes et des fonds de couleurs très proches",
+        "Changer la signification des couleurs sur chaque page"
+      ],
+      "correctIndex": 0,
+      "correction": "Une palette sobre maintient l’attention sur les données. Les couleurs vives peuvent attirer le regard sur une exception ou une information importante. Un contraste suffisant améliore également l’accessibilité pour les personnes malvoyantes. 6\n\n## Partie 2 — Choix des visualisations"
+    },
+    {
+      "id": "pl300-rapports-007",
+      "category": "Choix des visualisations",
+      "question": "Quel visuel convient généralement pour comparer les ventes de plusieurs catégories de produits indépendantes ?",
+      "options": [
+        "Un graphique en courbes reliant toutes les catégories",
+        "Une carte géographique",
+        "Un segment de dates",
+        "Un graphique à barres avec les catégories sur l’axe"
+      ],
+      "correctIndex": 3,
+      "correction": "Le graphique à barres permet de comparer facilement les valeurs de catégories distinctes. Un graphique en courbes pourrait suggérer une continuité ou une relation entre les catégories qui n’existe pas."
+    },
+    {
+      "id": "pl300-rapports-008",
+      "category": "Choix des visualisations",
+      "question": "Pour mettre immédiatement en évidence les produits les plus vendus, quel tri privilégier dans un graphique à barres ?",
+      "options": [
+        "Un tri alphabétique systématique",
+        "Un tri décroissant selon les ventes",
+        "Un tri aléatoire",
+        "Un tri selon la longueur du nom du produit"
+      ],
+      "correctIndex": 1,
+      "correction": "Le tri décroissant place les valeurs les plus élevées en premier et facilite la comparaison. Le cours recommande généralement de trier les catégories par valeur plutôt que par ordre alphabétique, selon le message à faire ressortir."
+    },
+    {
+      "id": "pl300-rapports-009",
+      "category": "Choix des visualisations",
+      "question": "Une série chronologique contient des périodes sans valeur enregistrée. Pourquoi choisir un histogramme plutôt qu’une courbe reliant les points disponibles ?",
+      "options": [
+        "Pour supprimer automatiquement les périodes manquantes",
+        "Pour transformer les dates en catégories de produits",
+        "Pour montrer les interruptions sans suggérer une continuité entre les valeurs",
+        "Pour afficher les périodes dans un ordre aléatoire"
+      ],
+      "correctIndex": 2,
+      "correction": "Une courbe peut relier les points situés avant et après une période sans données, ce qui peut suggérer une évolution non observée. Un histogramme permet de rendre ces interruptions plus visibles. L’axe temporel doit rester chronologique, de la période la plus ancienne à la plus récente."
+    },
+    {
+      "id": "pl300-rapports-010",
+      "category": "Choix des visualisations",
+      "question": "Des produits présentent des résultats positifs et négatifs. Quel choix évite de masquer les valeurs négatives dans une représentation ?",
+      "options": [
+        "Utiliser un graphique à barres ou un histogramme plutôt qu’un graphique en anneau",
+        "Utiliser un anneau en ignorant les produits négatifs",
+        "Transformer toutes les valeurs négatives en valeurs positives",
+        "Afficher uniquement le total général"
+      ],
+      "correctIndex": 0,
+      "correction": "L’exemple du cours montre qu’un graphique en anneau ne représente pas correctement une combinaison de valeurs positives et négatives. Un histogramme permet de montrer les valeurs de part et d’autre de zéro et de conserver tous les produits dans la comparaison."
+    },
+    {
+      "id": "pl300-rapports-011",
+      "category": "Choix des visualisations",
+      "question": "Quel avantage une matrice offre-t-elle pour présenter des données détaillées ?",
+      "options": [
+        "Elle interdit les regroupements",
+        "Elle ne peut afficher qu’une seule mesure",
+        "Elle remplace automatiquement le modèle sémantique",
+        "Elle permet des regroupements sur les lignes et les colonnes, ainsi qu’une navigation hiérarchique"
+      ],
+      "correctIndex": 3,
+      "correction": "Une matrice peut organiser les données selon plusieurs niveaux et permettre d’explorer leur détail. La mise en forme conditionnelle, comme les icônes ou les couleurs, peut également aider à repérer rapidement des informations importantes."
+    },
+    {
+      "id": "pl300-rapports-012",
+      "category": "Choix des visualisations",
+      "question": "Quelle association entre granularité géographique et type de carte correspond aux exemples du cours ?",
+      "options": [
+        "Carte choroplèthe pour toute donnée, quelle que soit sa granularité",
+        "Bulles pour des villes dispersées, carte choroplèthe pour comparer des États",
+        "Graphique en anneau pour localiser les villes",
+        "Carte obligatoire dès qu’une colonne contient un pays"
+      ],
+      "correctIndex": 1,
+      "correction": "Une carte à bulles convient à des points géographiques dispersés, comme des villes. Une carte choroplèthe utilise les couleurs de zones pour comparer des territoires, comme des États. Si la localisation n’apporte rien à l’analyse, un graphique par catégorie peut être préférable."
+    },
+    {
+      "id": "pl300-rapports-013",
+      "category": "Choix des visualisations",
+      "question": "Quelle affirmation sur les visuels personnalisés d’AppSource est correcte ?",
+      "options": [
+        "Tous les visuels sont certifiés",
+        "Un visuel non certifié est nécessairement dangereux",
+        "Certains visuels sont certifiés, et il faut vérifier les règles de son organisation avant de les utiliser",
+        "La certification garantit qu’un visuel convient à tous les besoins métier"
+      ],
+      "correctIndex": 2,
+      "correction": "La certification indique que le visuel satisfait aux exigences de vérification de Microsoft décrites dans le cours. Elle est facultative, donc son absence ne prouve pas qu’un visuel est dangereux. L’organisation peut néanmoins imposer des restrictions sur les visuels personnalisés. 12\n\n## Partie 3 — Filtres et segments"
+    },
+    {
+      "id": "pl300-rapports-014",
+      "category": "Filtres et segments",
+      "question": "Quels sont les cinq niveaux de filtrage présentés dans le cours ?",
+      "options": [
+        "Modèle sémantique avec RLS, rapport, page, visuel et mesure",
+        "Fichier, dossier, serveur, réseau et navigateur",
+        "Table, image, bouton, forme et texte",
+        "Desktop, Mobile, Excel, Teams et SharePoint"
+      ],
+      "correctIndex": 0,
+      "correction": "Le cours distingue le filtrage au niveau du modèle sémantique, notamment avec la sécurité au niveau des lignes, puis aux niveaux rapport, page, visuel et mesure. Les filtres de rapport, de page et de visuel correspondent aux niveaux de la structure du rapport."
+    },
+    {
+      "id": "pl300-rapports-015",
+      "category": "Filtres et segments",
+      "question": "Un filtre de rapport sélectionne les États-Unis, un filtre de page sélectionne Washington et un filtre de visuel sélectionne Seattle. Que montre le visuel ?",
+      "options": [
+        "Toutes les données mondiales, car les filtres s’annulent",
+        "Toutes les villes des États-Unis",
+        "Uniquement les données filtrées par le rapport, car il est prioritaire",
+        "Les données correspondant simultanément aux États-Unis, à Washington et à Seattle"
+      ],
+      "correctIndex": 3,
+      "correction": "Les filtres des différents niveaux se combinent. Le filtre du visuel s’ajoute aux filtres déjà appliqués au rapport et à la page. Dans cet exemple, les données doivent donc satisfaire les trois conditions."
+    },
+    {
+      "id": "pl300-rapports-016",
+      "category": "Filtres et segments",
+      "question": "Vous voulez afficher uniquement les magasins dont les ventes totales dépassent un seuil. Où appliquer un filtre fondé sur la mesure de ventes ?",
+      "options": [
+        "Uniquement dans les paramètres de la source",
+        "Dans les filtres du visuel concerné",
+        "Dans les propriétés de couleur du rapport",
+        "Dans les marges de la page"
+      ],
+      "correctIndex": 1,
+      "correction": "Un filtre au niveau du visuel peut utiliser une mesure pour éliminer les groupes qui ne respectent pas une condition. Il peut ainsi conserver uniquement les magasins dont le total des ventes dépasse le seuil souhaité. Le cours distingue cette possibilité des filtres au niveau du rapport et de la page."
+    },
+    {
+      "id": "pl300-rapports-017",
+      "category": "Filtres et segments",
+      "question": "Quelle différence existe-t-il entre verrouiller et masquer un filtre ?",
+      "options": [
+        "Verrouiller supprime le filtre, masquer supprime les données",
+        "Les deux actions retirent le filtre du calcul",
+        "Verrouiller empêche sa modification par le lecteur, masquer le rend invisible pour celui-ci",
+        "Masquer le filtre le transforme en segment"
+      ],
+      "correctIndex": 2,
+      "correction": "Un filtre verrouillé reste appliqué, mais le consommateur ne peut pas le modifier ou le supprimer. Un filtre masqué reste également appliqué, sans apparaître au consommateur dans le volet Filtres. Ce sont deux propriétés différentes."
+    },
+    {
+      "id": "pl300-rapports-018",
+      "category": "Filtres et segments",
+      "question": "Quelle affirmation décrit correctement le fonctionnement d’un segment ?",
+      "options": [
+        "C’est un visuel qui filtre d’autres visuels et qui peut agir sur d’autres pages lorsqu’il est synchronisé",
+        "C’est toujours un filtre de page, sans aucune différence de fonctionnement",
+        "Il modifie directement les valeurs dans la source",
+        "Il sert uniquement à afficher un titre"
+      ],
+      "correctIndex": 0,
+      "correction": "Par défaut, un segment filtre les autres visuels de sa page. Il reste toutefois un visuel qui propage des filtres, plutôt qu’un filtre de page au sens du volet Filtres. Sa synchronisation permet d’étendre son effet à d’autres pages."
+    },
+    {
+      "id": "pl300-rapports-019",
+      "category": "Filtres et segments",
+      "question": "Quel type de segment convient pour afficher une période qui évolue automatiquement par rapport à la date actuelle ?",
+      "options": [
+        "Un segment de texte trié par ordre alphabétique",
+        "Un segment numérique à valeur fixe",
+        "Une liste de produits en sélection unique",
+        "Un segment de date relative"
+      ],
+      "correctIndex": 3,
+      "correction": "Le segment de date relative définit une période par rapport à la date actuelle. Il permet de filtrer sur des périodes passées, présentes ou futures sans devoir remplacer manuellement les bornes de dates à chaque consultation."
+    },
+    {
+      "id": "pl300-rapports-020",
+      "category": "Filtres et segments",
+      "question": "Un segment propose les scénarios « Réel », « Budget » et « Prévision ». Comment imposer le choix d’un seul scénario à la fois ?",
+      "options": [
+        "Supprimer deux scénarios du modèle",
+        "Activer l’option « Sélection unique »",
+        "Remplacer le segment par une image",
+        "Ajouter les trois scénarios dans une même valeur de texte"
+      ],
+      "correctIndex": 1,
+      "correction": "L’option Sélection unique limite le segment à un seul élément sélectionné. Elle convient lorsque l’analyse doit porter sur un scénario à la fois, comme Réel, Budget ou Prévision."
+    }
+  ]
+}

@@ -39,3 +39,20 @@ Ajout de la formation INAR « État de l’art sur l’Intelligence Artificielle
 - Les quiz existants CAIP, Spark et INAR sont conservés ; correction uniquement en fin de questionnaire et rapport PDF.
 - Liens : `?formation=pl300` et `?quiz=pl300-quiz-01`.
 - Déploiement Azure Static Web Apps : racine `/`, aucun build nécessaire.
+
+## Version 13 — Microsoft PL-300, Quiz 02
+- Quiz 02 activé : 20 questions issues du document fourni, réponses et explications détaillées.
+- Fichier `data/pl300/modelisation-dax.json`.
+- Quiz 03 toujours à venir.
+- Lien : `?quiz=pl300-quiz-02`.
+- Aucune correction pendant le quiz ; rapport final et PDF conservés.
+
+## Version 14 — Quiz 03 PL-300
+
+Le troisième quiz de la formation PL-300 est actif (20 QCM et corrigés détaillés).
+
+- Formation : `?formation=pl300`
+- Quiz 03 : `?quiz=pl300-quiz-03`
+- Banque : `data/pl300/rapports-visualisations.json`
+
+Les bonnes réponses sont présentées seulement après la fin du quiz, avec rapport PDF.

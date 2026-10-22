@@ -1,0 +1,266 @@
+{
+  "title": "Quiz 02 : Modélisation sémantique, DAX et calculs visuels",
+  "description": "Relations, paramètres, mesures DAX, contexte de filtre, intelligence temporelle et calculs visuels.",
+  "questions": [
+    {
+      "id": "pl300-modelisation-001",
+      "category": "Configuration du modèle sémantique",
+      "question": "Une table Produits contient un identifiant unique par produit, tandis que la table Ventes contient plusieurs lignes par produit. Quelle relation faut-il créer ?",
+      "options": [
+        "Plusieurs-à-plusieurs entre Produits et Ventes",
+        "Un-à-plusieurs de Produits vers Ventes",
+        "Un-à-un entre Produits et Ventes",
+        "Aucune relation entre les deux tables"
+      ],
+      "correctIndex": 1,
+      "correction": "La table Produits représente le côté **« un »**, car chaque identifiant y apparaît une seule fois. La table Ventes représente le côté **« plusieurs »**, car un produit peut figurer dans plusieurs ventes. C’est la relation habituelle entre une dimension et une table de faits."
+    },
+    {
+      "id": "pl300-modelisation-002",
+      "category": "Configuration du modèle sémantique",
+      "question": "Que détermine la direction du filtre croisé dans une relation ?",
+      "options": [
+        "L’ordre de tri des lignes dans les tables",
+        "La fréquence d’actualisation des données",
+        "La position des tables dans la vue Modèle",
+        "Le sens dans lequel les filtres se propagent entre les tables"
+      ],
+      "correctIndex": 3,
+      "correction": "La direction du filtre croisé détermine comment un filtre appliqué à une table affecte les tables liées. Selon la cardinalité et la configuration, cette propagation peut fonctionner dans un seul sens ou dans les deux sens. Elle ne définit ni le tri ni l’actualisation."
+    },
+    {
+      "id": "pl300-modelisation-003",
+      "category": "Configuration du modèle sémantique",
+      "question": "Une relation inactive relie la table Calendrier à la date d’expédition des ventes. Comment l’utiliser dans une mesure sans modifier durablement le modèle ?",
+      "options": [
+        "Utiliser `USERELATIONSHIP` dans `CALCULATE`",
+        "Supprimer la relation active avant chaque consultation",
+        "Utiliser `SUM` pour activer automatiquement toutes les relations",
+        "Transformer la relation en plusieurs-à-plusieurs"
+      ],
+      "correctIndex": 0,
+      "correction": "`USERELATIONSHIP` indique la relation à utiliser pendant l’évaluation d’un calcul. Dans `CALCULATE`, elle permet par exemple d’analyser les ventes selon la date d’expédition plutôt que selon la date de commande. Cette utilisation ne change pas durablement la configuration active du modèle."
+    },
+    {
+      "id": "pl300-modelisation-004",
+      "category": "Configuration du modèle sémantique",
+      "question": "Quel choix associe correctement les deux types de paramètres présentés dans le cours ?",
+      "options": [
+        "Plage numérique pour changer les axes, Champs pour définir un taux hypothétique",
+        "Plage numérique pour créer les relations, Champs pour actualiser les données",
+        "Plage numérique pour une simulation, Champs pour choisir le champ affiché dans un visuel",
+        "Les deux servent uniquement à modifier les données sources"
+      ],
+      "correctIndex": 2,
+      "correction": "Un **paramètre de plage numérique** permet de tester une hypothèse, comme un taux de change sélectionné dans un segment. Un **paramètre de champs** permet de choisir le champ utilisé dans un visuel, par exemple Catégorie ou Produit. Ces paramètres ne modifient pas les données d’origine. **6**\n\n## Partie 2 — Calculs DAX"
+    },
+    {
+      "id": "pl300-modelisation-005",
+      "category": "Calculs DAX",
+      "question": "Quels objets peut-on créer avec DAX dans un modèle sémantique ?",
+      "options": [
+        "Uniquement des graphiques",
+        "Des mesures, des colonnes calculées et des tables calculées",
+        "Uniquement des requêtes de connexion aux sources",
+        "Des espaces de travail et des comptes utilisateurs"
+      ],
+      "correctIndex": 1,
+      "correction": "DAX signifie **Data Analysis Expressions**. Il fournit des fonctions et des opérateurs pour écrire des calculs dans le modèle. Ces expressions peuvent définir des mesures, des colonnes calculées ou des tables calculées."
+    },
+    {
+      "id": "pl300-modelisation-006",
+      "category": "Calculs DAX",
+      "question": "Dans un modèle en mode Importation, quelle différence entre une colonne calculée et une mesure est correcte ?",
+      "options": [
+        "Les deux stockent systématiquement une valeur pour chaque ligne",
+        "La mesure se calcule uniquement lors de l’actualisation",
+        "La colonne calculée réagit aux segments en recalculant toutes ses valeurs",
+        "La colonne calculée stocke des valeurs par ligne, tandis que la mesure se calcule à la demande selon le contexte"
+      ],
+      "correctIndex": 3,
+      "correction": "Une colonne calculée produit une valeur pour chaque ligne et occupe de l’espace dans le modèle importé. Une mesure calcule son résultat lorsqu’un visuel la demande, selon les filtres appliqués. Pour un indicateur qui doit réagir aux sélections de l’utilisateur, une mesure est généralement adaptée."
+    },
+    {
+      "id": "pl300-modelisation-007",
+      "category": "Calculs DAX",
+      "question": "Quelle affirmation décrit correctement une mesure rapide ?",
+      "options": [
+        "Power BI génère une mesure DAX à partir d’un calcul prédéfini et des champs sélectionnés",
+        "Elle ne contient aucune expression DAX",
+        "Elle ne fonctionne que sur une seule ligne de données",
+        "Elle remplace les relations entre les tables"
+      ],
+      "correctIndex": 0,
+      "correction": "Une mesure rapide propose un calcul prédéfini que l’utilisateur configure en sélectionnant les champs nécessaires. Power BI génère ensuite l’expression DAX. Cela facilite la création de certains calculs et permet d’en observer la syntaxe."
+    },
+    {
+      "id": "pl300-modelisation-008",
+      "category": "Calculs DAX",
+      "question": "Pourquoi écrire une mesure `Profit = [TotalSales] - [TotalCost]` ?",
+      "options": [
+        "Pour convertir les mesures en colonnes stockées",
+        "Pour supprimer le contexte de filtre",
+        "Pour réutiliser des mesures existantes et composer la logique de calcul",
+        "Pour empêcher l’utilisation de segments"
+      ],
+      "correctIndex": 2,
+      "correction": "Une **mesure composée** fait référence à d’autres mesures. Ici, le calcul du profit réutilise les définitions des ventes et des coûts. Cette approche évite de répéter la même logique dans chaque formule et facilite sa maintenance."
+    },
+    {
+      "id": "pl300-modelisation-009",
+      "category": "Calculs DAX",
+      "question": "Que fait une fonction d’itérateur comme `AVERAGEX` ?",
+      "options": [
+        "Elle calcule uniquement le nombre de colonnes d’une table",
+        "Elle évalue une expression pour chaque ligne d’une table, puis calcule la moyenne des résultats",
+        "Elle supprime automatiquement les filtres",
+        "Elle transforme une mesure en table permanente"
+      ],
+      "correctIndex": 1,
+      "correction": "`AVERAGEX` parcourt les lignes de la table fournie et évalue l’expression pour chacune d’elles. Elle calcule ensuite la moyenne des valeurs obtenues. L’exemple du support parcourt les commandes distinctes pour calculer le chiffre d’affaires moyen par commande. **13**\n\n## Partie 3 — Contexte de filtre"
+    },
+    {
+      "id": "pl300-modelisation-010",
+      "category": "Contexte de filtre",
+      "question": "Pourquoi une même mesure peut-elle afficher des résultats différents selon le mois ou le pays sélectionné ?",
+      "options": [
+        "Power BI change automatiquement sa formule DAX",
+        "La mesure crée une nouvelle colonne pour chaque sélection",
+        "Les données sources changent à chaque clic",
+        "La mesure s’évalue dans un contexte de filtre différent"
+      ],
+      "correctIndex": 3,
+      "correction": "Le contexte de filtre correspond aux filtres qui influencent le calcul. Il peut inclure les sélections de segments, les filtres du rapport et les regroupements du visuel. La formule reste identique, mais elle s’applique à un ensemble de données différent."
+    },
+    {
+      "id": "pl300-modelisation-011",
+      "category": "Contexte de filtre",
+      "question": "Un segment filtre Product[Color] sur « Red ». Que fait la mesure DAX suivante ?\n\nSales Black = CALCULATE(SUM(Sales[Sales]), 'Product'[Color] = \"Black\")",
+      "options": [
+        "Elle calcule les ventes noires en remplaçant le filtre sur cette colonne, tout en conservant les autres filtres applicables",
+        "Elle calcule toujours les ventes rouges",
+        "Elle supprime tous les filtres du rapport",
+        "Elle renvoie obligatoirement une erreur"
+      ],
+      "correctIndex": 0,
+      "correction": "Dans cette expression, `CALCULATE` remplace le filtre existant sur `Product[Color]` par **Black**. Les autres filtres, comme l’année ou le pays, continuent à s’appliquer. La fonction modifie donc une partie ciblée du contexte, sans supprimer systématiquement tous les filtres."
+    },
+    {
+      "id": "pl300-modelisation-012",
+      "category": "Contexte de filtre",
+      "question": "Quel est l’effet de `REMOVEFILTERS('Sales Territory')` utilisé dans `CALCULATE` ?",
+      "options": [
+        "Supprimer la table du modèle",
+        "Effacer toutes les lignes de ventes",
+        "Retirer les filtres de la table Sales Territory pour ce calcul",
+        "Désactiver définitivement les segments du rapport"
+      ],
+      "correctIndex": 2,
+      "correction": "`REMOVEFILTERS` retire les filtres de la table ou des colonnes indiquées pendant l’évaluation du calcul. Cela permet notamment de calculer un total de référence pour déterminer la contribution d’une région. Les filtres sur les autres tables ne sont pas tous supprimés pour autant. **16**\n\n## Partie 4 — Intelligence temporelle"
+    },
+    {
+      "id": "pl300-modelisation-013",
+      "category": "Intelligence temporelle",
+      "question": "Quelles caractéristiques doit respecter la colonne de dates de la table commune présentée dans le cours ?",
+      "options": [
+        "Contenir uniquement les jours où des ventes ont eu lieu",
+        "Contenir des dates uniques, sans valeur vide ni date manquante, et couvrir des années complètes",
+        "Contenir plusieurs lignes pour chaque date",
+        "Stocker uniquement les noms des mois sous forme de texte"
+      ],
+      "correctIndex": 1,
+      "correction": "Une table de dates continue fournit une référence cohérente pour les calculs temporels. Elle doit couvrir les dates nécessaires, y compris celles sans transaction. Le cours recommande également de la **marquer comme table de dates** dans le modèle."
+    },
+    {
+      "id": "pl300-modelisation-014",
+      "category": "Intelligence temporelle",
+      "question": "Quelle association de fonctions est correcte ?",
+      "options": [
+        "`TOTALYTD` pour l’année précédente, `SAMEPERIODLASTYEAR` pour le cumul annuel",
+        "`TOTALYTD` pour compter les années, `SAMEPERIODLASTYEAR` pour supprimer les dates",
+        "`TOTALYTD` pour le mois précédent, `SAMEPERIODLASTYEAR` pour le mois suivant",
+        "`TOTALYTD` pour un cumul depuis le début de l’année, `SAMEPERIODLASTYEAR` pour la même période de l’année précédente"
+      ],
+      "correctIndex": 3,
+      "correction": "`TOTALYTD` évalue une expression sur la période allant du début de l’année à la date considérée. `SAMEPERIODLASTYEAR` retourne les dates correspondant à la même période un an auparavant et peut servir de filtre dans `CALCULATE`. Ces fonctions répondent donc à deux besoins différents : cumuler et comparer."
+    },
+    {
+      "id": "pl300-modelisation-015",
+      "category": "Intelligence temporelle",
+      "question": "Pourquoi un niveau de stock est-il un exemple de mesure semi-additive ?",
+      "options": [
+        "On peut additionner les stocks de produits à une date donnée, mais additionner les stocks de plusieurs dates n’a généralement pas de sens",
+        "Un stock ne peut jamais faire l’objet d’un calcul",
+        "Il faut toujours additionner les stocks de tous les jours pour obtenir le stock mensuel",
+        "Une mesure de stock doit obligatoirement utiliser une moyenne"
+      ],
+      "correctIndex": 0,
+      "correction": "Un stock représente une situation à un instant donné. Additionner le stock d’hier à celui d’aujourd’hui compterait plusieurs fois une partie des mêmes unités. L’exemple du cours utilise `LASTDATE` pour calculer le stock à la dernière date du contexte, plutôt que de sommer les instantanés sur toute la période. **1920**\n\n## Partie 5 — Calculs visuels"
+    },
+    {
+      "id": "pl300-modelisation-016",
+      "category": "Calculs visuels",
+      "question": "Quelle différence distingue un calcul visuel d’une mesure du modèle ?",
+      "options": [
+        "Un calcul visuel modifie directement les données sources",
+        "Un calcul visuel peut utiliser n’importe quel champ du modèle sans l’ajouter au visuel",
+        "Sa formule appartient au visuel et s’appuie sur les données présentes dans celui-ci",
+        "Sa formule remplace toutes les mesures du modèle"
+      ],
+      "correctIndex": 2,
+      "correction": "Le calcul visuel se définit sur un visuel précis, tandis qu’une mesure appartient au modèle sémantique. Il travaille avec les données disponibles dans la matrice visuelle. Si un champ nécessaire n’y figure pas, il faut d’abord l’ajouter au visuel."
+    },
+    {
+      "id": "pl300-modelisation-017",
+      "category": "Calculs visuels",
+      "question": "Un visuel contient déjà les valeurs agrégées `[Sales Amount]` et `[Total Product Cost]`. Quelle expression permet d’y ajouter un calcul visuel du profit ?",
+      "options": [
+        "`Profit = COUNTROWS([Sales Amount])`",
+        "`Profit = [Sales Amount] - [Total Product Cost]`",
+        "`Profit = REMOVEFILTERS([Total Product Cost])`",
+        "`Profit = USERELATIONSHIP([Sales Amount], [Total Product Cost])`"
+      ],
+      "correctIndex": 1,
+      "correction": "Le calcul visuel peut soustraire directement les valeurs déjà présentes dans le visuel. Il travaille ici sur des données agrégées, donc il n’est pas nécessaire d’ajouter une fonction `SUM` autour de chaque champ."
+    },
+    {
+      "id": "pl300-modelisation-018",
+      "category": "Calculs visuels",
+      "question": "Parmi les fonctions suivantes, laquelle ne peut pas être utilisée dans un calcul visuel selon le cours ?",
+      "options": [
+        "`SUM`",
+        "`AVERAGEX`",
+        "`RUNNINGSUM`",
+        "`USERELATIONSHIP`"
+      ],
+      "correctIndex": 3,
+      "correction": "`USERELATIONSHIP` dépend des relations du modèle. Les calculs visuels travaillent dans les limites de la matrice visuelle et ne prennent pas en charge cette fonction. Les modèles de calcul visuel proposent notamment des calculs courants comme les sommes cumulatives et les moyennes mobiles."
+    },
+    {
+      "id": "pl300-modelisation-019",
+      "category": "Calculs visuels",
+      "question": "Vous souhaitez afficher uniquement le profit, mais son calcul visuel dépend du montant des ventes et du coût. Que faire de ces deux champs ?",
+      "options": [
+        "Les masquer dans le visuel sans les supprimer de sa matrice",
+        "Les supprimer du visuel et du modèle",
+        "Les remplacer par des valeurs fixes",
+        "Supprimer le calcul du profit"
+      ],
+      "correctIndex": 0,
+      "correction": "Le masquage permet de conserver les champs nécessaires au calcul sans les afficher dans le visuel final. Ils restent disponibles dans la matrice visuelle, et le calcul peut continuer à les référencer. Les supprimer retirerait au calcul les données dont il dépend."
+    },
+    {
+      "id": "pl300-modelisation-020",
+      "category": "Calculs visuels",
+      "question": "Dans un calcul visuel, quels rôles jouent les paramètres Axe et Réinitialiser ?",
+      "options": [
+        "Axe choisit la source de données, Réinitialiser actualise le modèle",
+        "Axe crée les relations, Réinitialiser supprime les filtres du rapport",
+        "Axe définit le parcours de la matrice, Réinitialiser définit à quel niveau le calcul redémarre",
+        "Axe change la taille du graphique, Réinitialiser remet les couleurs par défaut"
+      ],
+      "correctIndex": 2,
+      "correction": "Le paramètre **Axe** détermine le sens du parcours, par exemple `ROWS` pour parcourir les lignes ou `COLUMNS` pour parcourir les colonnes. Le paramètre **Réinitialiser** indique quand le calcul doit redémarrer dans la hiérarchie. Par défaut, `NONE` ne le réinitialise pas. Dans l’exemple du support, `HIGHESTPARENT` permet de recommencer un cumul à chaque nouvel exercice comptable."
+    }
+  ]
+}
